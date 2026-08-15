@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-15T16:42:05.4486541Z",
+    "generatedAt":  "2026-08-15T18:08:02.6111724Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  390,
+    "count":  393,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -5968,6 +5968,66 @@
 
                                                                    ],
                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCES.ACTIVE.html"
+                                                },
+                     "SENSORS.SUSTAINED.HIGH":  {
+                                                    "id":  "SENSORS.SUSTAINED.HIGH",
+                                                    "eventId":  2041,
+                                                    "area":  "System",
+                                                    "severity":  "High",
+                                                    "status":  "Warn",
+                                                    "remediable":  false,
+                                                    "riskLevel":  "Manual",
+                                                    "title":  {
+                                                                  "it-IT":  "{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay} ore al giorno",
+                                                                  "en-US":  "{Metric} of {Subject} steadily above threshold: {HoursPerDay} hours a day"
+                                                              },
+                                                    "emittedBy":  [
+
+                                                                  ],
+                                                    "compliance":  [
+
+                                                                   ],
+                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SUSTAINED.HIGH.html"
+                                                },
+                     "SENSORS.SUSTAINED.INSUFFICIENT":  {
+                                                            "id":  "SENSORS.SUSTAINED.INSUFFICIENT",
+                                                            "eventId":  2042,
+                                                            "area":  "System",
+                                                            "severity":  "Info",
+                                                            "status":  "Info",
+                                                            "remediable":  false,
+                                                            "riskLevel":  "Manual",
+                                                            "title":  {
+                                                                          "it-IT":  "Storico insufficiente per valutare le tendenze ({Days} giorni su {Required})",
+                                                                          "en-US":  "Not enough history to judge trends ({Days} days out of {Required})"
+                                                                      },
+                                                            "emittedBy":  [
+                                                                              "SENSORS.SUSTAINED"
+                                                                          ],
+                                                            "compliance":  [
+
+                                                                           ],
+                                                            "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SUSTAINED.INSUFFICIENT.html"
+                                                        },
+                     "SENSORS.SUSTAINED.WARN":  {
+                                                    "id":  "SENSORS.SUSTAINED.WARN",
+                                                    "eventId":  2040,
+                                                    "area":  "System",
+                                                    "severity":  "Medium",
+                                                    "status":  "Warn",
+                                                    "remediable":  false,
+                                                    "riskLevel":  "Manual",
+                                                    "title":  {
+                                                                  "it-IT":  "{Metric} di {Subject} sopra soglia {HoursPerDay} ore al giorno",
+                                                                  "en-US":  "{Metric} of {Subject} above threshold {HoursPerDay} hours a day"
+                                                              },
+                                                    "emittedBy":  [
+
+                                                                  ],
+                                                    "compliance":  [
+
+                                                                   ],
+                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SUSTAINED.WARN.html"
                                                 },
                      "SERVICES.AUTO.NONE":  {
                                                 "id":  "SERVICES.AUTO.NONE",

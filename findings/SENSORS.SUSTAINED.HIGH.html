@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SENSORS.SUSTAINED.HIGH - VestaMaintenance</title>
+<style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
+@media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem 1rem;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:52rem;margin:0 auto}
+a{color:var(--accent)}
+h1{font-size:1.6rem;margin:0 0 .25rem;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;word-break:break-all}
+h2{font-size:1.05rem;margin:2rem 0 .5rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+p{margin:.5rem 0}
+.lead{color:var(--dim);margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0}
+td,th{border-bottom:1px solid var(--line);padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:600;width:11rem}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.92em}
+.tag{display:inline-block;padding:.1rem .5rem;border:1px solid var(--line);border-radius:.25rem;font-size:.82rem}
+.sev-Critical,.sev-High{color:var(--fail);border-color:currentColor}
+.sev-Medium,.sev-Low{color:var(--warn);border-color:currentColor}
+nav{margin-bottom:2rem;font-size:.9rem;color:var(--dim)}
+ul.ids{list-style:none;padding:0;columns:2;column-gap:2rem}
+ul.ids li{margin:.15rem 0;break-inside:avoid}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--dim);font-size:.85rem}
+.overflow{overflow-x:auto}</style>
+</head>
+<body><main>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>SENSORS.SUSTAINED.HIGH</h1>
+<p class="lead">{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay} ore al giorno</p>
+<h2>Scheda</h2><div class="overflow"><table>
+<tr><th>Area</th><td>System</td></tr>
+<tr><th>Severita</th><td><span class="tag sev-High">High</span></td></tr>
+<tr><th>Stato</th><td>Warn</td></tr>
+<tr><th>Evento Windows</th><td><code>2041</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+</table></div>
+<h2>Che cosa significa</h2>
+<p>{Subject}: la grandezza {Metric} sta sopra {Threshold} {Unit} per una media di {HoursPerDay} ore al giorno - su {Days} giorni di osservazione. Massimo toccato {Max}, valore abituale {P95}. A questo punto non è un picco occasionale, è il modo in cui questo computer lavora tutti i giorni. Letto da {Source}.</p>
+<h2>Da dove cominciare</h2>
+<p>A queste ore al giorno la componente si consuma molto più in fretta del previsto, e la spesa di intervenire adesso è una frazione di quella di sostituirla fra sei mesi. Nell'ordine: pulizia del dissipatore e delle griglie, verifica che le ventole girino davvero (non che esistano), riposizionamento se il computer è in uno spazio chiuso, e per un NVMe la verifica che ci sia un dissipatore - molti fissi ne sono sprovvisti e il disco va in protezione termica senza essere difettoso. Se dopo l'intervento le ore al giorno non scendono, allora è il componente.</p>
+<h2>English</h2>
+<p class="lead">{Metric} of {Subject} steadily above threshold: {HoursPerDay} hours a day</p>
+<p>{Subject}: {Metric} sits above {Threshold} {Unit} for an average of {HoursPerDay} hours a day, over {Days} days of observation. Peak {Max}, usual value {P95}. At this point it is not an occasional spike, it is how this computer works every day. Read from {Source}.</p>
+
+<footer>
+Generato da <code>build/New-SchemaSite.ps1</code>.
+Gli identificativi e la loro documentazione sono pubblicati perche' chiunque
+possa scriverci sopra regole, ticket e correlazioni.
+</footer>
+</main></body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contratto e rilevamenti - VestaMaintenance</title>
+<title>SENSORS.SUSTAINED.WARN - VestaMaintenance</title>
 <style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
 @media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
 *{box-sizing:border-box}
@@ -29,36 +29,24 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 .overflow{overflow-x:auto}</style>
 </head>
 <body><main>
-<nav><a href="./index.html">VestaMaintenance</a> / <a href="./findings/index.html">rilevamenti</a></nav>
-<h1>VestaMaintenance</h1>
-<p class="lead">Contratto dei dati e vocabolario dei rilevamenti.</p>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>SENSORS.SUSTAINED.WARN</h1>
+<p class="lead">{Metric} di {Subject} sopra soglia {HoursPerDay} ore al giorno</p>
+<h2>Scheda</h2><div class="overflow"><table>
+<tr><th>Area</th><td>System</td></tr>
+<tr><th>Severita</th><td><span class="tag sev-Medium">Medium</span></td></tr>
+<tr><th>Stato</th><td>Warn</td></tr>
+<tr><th>Evento Windows</th><td><code>2040</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+</table></div>
+<h2>Che cosa significa</h2>
+<p>{Subject}: la grandezza {Metric} è stata sopra {Threshold} {Unit} per una media di {HoursPerDay} ore al giorno negli ultimi {Days} giorni. Massimo toccato {Max}, valore abituale {P95}. Non è un guasto: è una condizione di esercizio che consuma il componente più in fretta del previsto. Letto da {Source}.</p>
+<h2>Da dove cominciare</h2>
+<p>Guardare l'ambiente prima del componente: la polvere nel dissipatore, la ventola che gira piano, il computer chiuso in un mobile senza ricircolo, il portatile appoggiato su un divano. Sono le quattro cause di gran lunga più frequenti, e nessuna delle quattro si risolve sostituendo il pezzo. Se l'ambiente è a posto, il passo dopo è confrontare con una macchina gemella: se anche quella sta lì, non è quel computer, è il modello.</p>
+<h2>English</h2>
+<p class="lead">{Metric} of {Subject} above threshold {HoursPerDay} hours a day</p>
+<p>{Subject}: {Metric} stayed above {Threshold} {Unit} for an average of {HoursPerDay} hours a day over the last {Days} days. Peak {Max}, usual value {P95}. This is not a fault: it is an operating condition that wears the component faster than it should. Read from {Source}.</p>
 
-<h2>Contratto</h2>
-<p>Ogni esecuzione produce un file JSON. Questo e il suo schema, versione
-<code>1.1</code>:</p>
-<p><a href="schema/run-1.1.json"><code>schema/run-1.1.json</code></a></p>
-<p>La versione si incrementa <strong>solo</strong> per modifiche non
-retrocompatibili: un aggregatore la usa per rifiutare cio che non sa
-interpretare.</p>
-
-<h2>Rilevamenti</h2>
-<p>393 identificativi, uno per ogni condizione che il prodotto sa
-riconoscere. <code>DISK.SMART.PREDICTIVE_FAILURE</code>, non la stringa
-&quot;guasto imminente&quot;.</p>
-<p>Un identificativo pubblicato <strong>non si rinomina e non si riusa mai per
-un altro significato</strong>: e cio che permette di confrontare i dati di oggi
-con quelli dell anno scorso, e di sommare trecento computer in un numero solo.</p>
-<p><a href="findings/index.html">Elenco completo</a> &middot;
-   <a href="findings.json">Indice macchina-leggibile</a></p>
-
-<h2>Perche e pubblico</h2>
-<p>Perche chiunque possa scriverci sopra: una regola di correlazione in un SIEM,
-un ticket con l identificativo nel titolo, un monitoraggio in un RMM, un
-controllo in un altro strumento. Sono le stesse proprieta che rendono
-utilizzabili CVE e i CIS Controls.</p>
-<p>Documentazione e indice sono pubblicati con licenza
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Il
-prodotto e il suo codice non lo sono.</p>
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
 Gli identificativi e la loro documentazione sono pubblicati perche' chiunque
