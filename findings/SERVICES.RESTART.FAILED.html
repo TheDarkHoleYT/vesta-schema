@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SERVICES.RESTART.FAILED - VestaMaintenance</title>
+<style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
+@media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem 1rem;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:52rem;margin:0 auto}
+a{color:var(--accent)}
+h1{font-size:1.6rem;margin:0 0 .25rem;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;word-break:break-all}
+h2{font-size:1.05rem;margin:2rem 0 .5rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+p{margin:.5rem 0}
+.lead{color:var(--dim);margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0}
+td,th{border-bottom:1px solid var(--line);padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:600;width:11rem}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.92em}
+.tag{display:inline-block;padding:.1rem .5rem;border:1px solid var(--line);border-radius:.25rem;font-size:.82rem}
+.sev-Critical,.sev-High{color:var(--fail);border-color:currentColor}
+.sev-Medium,.sev-Low{color:var(--warn);border-color:currentColor}
+nav{margin-bottom:2rem;font-size:.9rem;color:var(--dim)}
+ul.ids{list-style:none;padding:0;columns:2;column-gap:2rem}
+ul.ids li{margin:.15rem 0;break-inside:avoid}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--dim);font-size:.85rem}
+.overflow{overflow-x:auto}</style>
+</head>
+<body><main>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>SERVICES.RESTART.FAILED</h1>
+<p class="lead">Riavvio del servizio {Service} non riuscito</p>
+<h2>Scheda</h2><div class="overflow"><table>
+<tr><th>Area</th><td>Services</td></tr>
+<tr><th>Severita</th><td><span class="tag sev-Medium">Medium</span></td></tr>
+<tr><th>Stato</th><td>Warn</td></tr>
+<tr><th>Evento Windows</th><td><code>14007</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+<tr><th>Emesso da</th><td><code>SYSTEM.SERVICES</code></td></tr>
+</table></div>
+<h2>Che cosa significa</h2>
+<p>Stato dopo il tentativo di avvio: {State}.</p>
+<h2>English</h2>
+<p class="lead">Could not restart service {Service}</p>
+<p>State after the start attempt: {State}.</p>
+
+<footer>
+Generato da <code>build/New-SchemaSite.ps1</code>.
+Gli identificativi e la loro documentazione sono pubblicati perche' chiunque
+possa scriverci sopra regole, ticket e correlazioni.
+</footer>
+</main></body>
+</html>

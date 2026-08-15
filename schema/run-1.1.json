@@ -1,0 +1,223 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://thedarkholeyt.github.io/vesta-schema/schema/run-1.1.json",
+  "title": "VestaMaintenance run",
+  "description": "Contratto di un'esecuzione. Prodotto da ConvertTo-PCMRunObject, consumato dal publisher, dall'aggregatore di flotta e da qualunque RMM o SIEM che legga i file della inbox. Le chiavi sono in inglese e in camelCase perche' sono dati, non testo per l'utente: le stringhe leggibili si ottengono risolvendo gli id sui file di lingua.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "tenantId",
+    "tool",
+    "mode",
+    "startedAt",
+    "finishedAt",
+    "durationMs",
+    "isAdmin",
+    "aborted",
+    "abortReason",
+    "device",
+    "healthScore",
+    "counts",
+    "bytesReclaimed",
+    "rebootRequired",
+    "rebootReasons",
+    "manualTodo",
+    "reportPaths",
+    "checksExecuted",
+    "checksSkipped",
+    "findings",
+    "actions",
+    "exitCode"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "description": "Versione di QUESTO contratto. Si incrementa solo per modifiche non retrocompatibili: l'aggregatore la usa per rifiutare run che non sa interpretare."
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+      "description": "Identificativo dell'esecuzione. Chiave di deduplica: la coda locale puo' consegnare lo stesso run due volte."
+    },
+    "tenantId": { "type": "string", "description": "Cliente. 'default' se la policy non lo dichiara." },
+    "tool": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "mode": { "type": "string", "enum": ["Check", "Safe", "Full"] },
+    "startedAt": { "type": "string", "format": "date-time", "description": "UTC ISO 8601 con offset ('o' di .NET)." },
+    "finishedAt": { "type": "string", "format": "date-time" },
+    "durationMs": { "type": "number", "minimum": 0 },
+    "isAdmin": { "type": "boolean" },
+    "aborted": { "type": "boolean", "description": "Vero quando il run non ha lavorato: lock occupato, fuori finestra, batteria, punto di ripristino mancante. Il file esiste comunque: in console di flotta il silenzio non e' un'informazione." },
+    "abortReason": { "type": "string" },
+    "device": {
+      "type": "object",
+      "required": ["DeviceId", "Name"],
+      "description": "Anagrafica della macchina. Le chiavi restano PascalCase perche' provengono dall'oggetto in memoria e sono gia' consumate cosi' dall'aggregatore e dai report esistenti.",
+      "properties": {
+        "DeviceId": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+          "description": "Identificativo stabile del computer: sopravvive a rename, cambio dominio e reinstallazione dello strumento."
+        },
+        "Name": { "type": "string" },
+        "Domain": { "type": "string" },
+        "DomainJoined": { "type": "boolean" },
+        "Manufacturer": { "type": "string" },
+        "Model": { "type": "string" },
+        "Serial": { "type": "string" },
+        "ChassisType": { "type": "string" },
+        "IsVirtual": { "type": "boolean" },
+        "IsLaptop": { "type": "boolean" },
+        "OsCaption": { "type": "string" },
+        "OsVersion": { "type": "string" },
+        "OsBuild": { "type": "string" },
+        "OsUbr": { "type": "string" },
+        "OsEdition": { "type": "string" },
+        "OsArch": { "type": "string" },
+        "OsInstallDate": { "type": ["string", "null"], "format": "date-time" },
+        "LastBootTime": { "type": ["string", "null"], "format": "date-time" },
+        "CpuName": { "type": "string" },
+        "CpuCores": { "type": "integer", "minimum": 0 },
+        "RamBytes": { "type": "number", "minimum": 0 },
+        "BiosVersion": { "type": "string" },
+        "BiosDate": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "healthScore": {
+      "type": "object",
+      "required": ["total", "penalty", "byArea"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "penalty": { "type": "number", "minimum": 0 },
+        "byArea": {
+          "type": "object",
+          "description": "Punteggio per area, chiavi dinamiche: una voce per ogni area che ha prodotto almeno un finding.",
+          "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 100 }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["Ok", "Warn", "Fail", "Info", "Fixed", "Skip"],
+      "additionalProperties": { "type": "integer", "minimum": 0 },
+      "properties": {
+        "Ok": { "type": "integer", "minimum": 0 },
+        "Warn": { "type": "integer", "minimum": 0 },
+        "Fail": { "type": "integer", "minimum": 0 },
+        "Info": { "type": "integer", "minimum": 0 },
+        "Fixed": { "type": "integer", "minimum": 0 },
+        "Skip": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "bytesReclaimed": { "type": "number" },
+    "rebootRequired": { "type": "boolean" },
+    "rebootReasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key"],
+        "properties": {
+          "key": { "type": "string", "description": "Chiave di lingua, sezione Reboot." },
+          "data": { "type": ["object", "null"] }
+        }
+      }
+    },
+    "manualTodo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key"],
+        "properties": {
+          "key": { "type": "string", "description": "Chiave di lingua, sezione Manual." },
+          "data": { "type": ["object", "null"] }
+        }
+      }
+    },
+    "reportPaths": {
+      "type": "object",
+      "description": "Percorsi locali dei report: servono all'assistenza per chiedere il file giusto senza cercarlo.",
+      "properties": {
+        "html": { "type": "string" },
+        "json": { "type": "string" },
+        "csv": { "type": "string" },
+        "txt": { "type": "string" }
+      }
+    },
+    "checksExecuted": { "type": "array", "items": { "type": "string" } },
+    "checksSkipped": { "type": "array", "items": { "type": "string" } },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "checkId", "area", "status", "severity", "weight", "timestamp"],
+        "properties": {
+          "id": { "type": "string", "description": "Identificativo stabile del rilevamento, es. DISK.SPACE.LOW. Non contiene testo tradotto." },
+          "checkId": { "type": "string" },
+          "area": { "type": "string" },
+          "status": { "type": "string", "enum": ["Ok", "Warn", "Fail", "Info", "Fixed", "Skip"] },
+          "severity": { "type": "string", "enum": ["Critical", "High", "Medium", "Low", "Info"] },
+          "weight": { "type": "number", "minimum": 0, "description": "Penalita' sul punteggio. Zero per Ok, Info e Skip qualunque sia la severita' dichiarata." },
+          "remediable": { "type": "boolean" },
+          "riskLevel": { "type": "string", "enum": ["Safe", "Full", "Manual"] },
+          "requiresReboot": { "type": "boolean" },
+          "durationMs": { "type": "number", "minimum": 0 },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "data": { "type": ["object", "null"], "description": "Valori grezzi e neutri (byte, non '465,76 GB'): la formattazione dipende dalla cultura di chi legge, non da quella del PC che ha prodotto il file." }
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "description": "Cosa e' stato cambiato sul sistema. Separato dai finding perche' risponde a una domanda diversa ed e' la traccia utile in caso di contestazione.",
+      "items": {
+        "type": "object",
+        "required": ["id", "checkId", "outcome", "timestamp"],
+        "properties": {
+          "id": { "type": "string" },
+          "checkId": { "type": "string" },
+          "command": { "type": "string" },
+          "outcome": { "type": "string", "enum": ["Success", "Partial", "Failed", "Skipped"] },
+          "durationMs": { "type": "number", "minimum": 0 },
+          "bytesReclaimed": { "type": "number" },
+          "requiresReboot": { "type": "boolean" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "data": { "type": ["object", "null"] }
+        }
+      }
+    },
+    "compliance": {
+      "type": "array",
+      "description": "Stato dei controlli di conformita' (CIS Controls v8, NIS2, GDPR) derivato dai finding di questa esecuzione. Non e' obbligatorio: i run prodotti prima dell'introduzione della mappatura non lo contengono.",
+      "items": {
+        "type": "object",
+        "required": ["control", "state"],
+        "properties": {
+          "control": { "type": "string" },
+          "cis": { "type": "string" },
+          "nis2": { "type": "string" },
+          "gdpr": { "type": "string" },
+          "state": {
+            "type": "string",
+            "enum": ["Pass", "Fail", "NotAssessed"],
+            "description": "NotAssessed significa che in questa esecuzione non c'era alcun rilevamento pertinente: non e' una conformita' presunta."
+          },
+          "findings": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "exitCode": {
+      "type": "integer",
+      "enum": [0, 10, 20, 30, 40, 50],
+      "description": "0 nessun problema, 10 avvisi, 20 problemi gravi, 30 riavvio necessario, 40 errore interno, 50 esecuzione non effettuata."
+    }
+  }
+}

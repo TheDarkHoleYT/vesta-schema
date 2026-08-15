@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rilevamenti - VestaMaintenance</title>
+<style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
+@media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem 1rem;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:52rem;margin:0 auto}
+a{color:var(--accent)}
+h1{font-size:1.6rem;margin:0 0 .25rem;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;word-break:break-all}
+h2{font-size:1.05rem;margin:2rem 0 .5rem;text-transform:uppercase;letter-spacing:.06em;color:var(--dim)}
+p{margin:.5rem 0}
+.lead{color:var(--dim);margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0}
+td,th{border-bottom:1px solid var(--line);padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:600;width:11rem}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.92em}
+.tag{display:inline-block;padding:.1rem .5rem;border:1px solid var(--line);border-radius:.25rem;font-size:.82rem}
+.sev-Critical,.sev-High{color:var(--fail);border-color:currentColor}
+.sev-Medium,.sev-Low{color:var(--warn);border-color:currentColor}
+nav{margin-bottom:2rem;font-size:.9rem;color:var(--dim)}
+ul.ids{list-style:none;padding:0;columns:2;column-gap:2rem}
+ul.ids li{margin:.15rem 0;break-inside:avoid}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--dim);font-size:.85rem}
+.overflow{overflow-x:auto}</style>
+</head>
+<body><main>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>Rilevamenti</h1>
+<p class="lead">390 identificativi. Ognuno e stabile: pubblicato non si rinomina e non si riusa mai per un altro significato.</p>
+<p>Indice macchina-leggibile: <a href="../findings.json">findings.json</a></p>
+<h2>Backup (6)</h2><ul class="ids">
+<li><a href="BACKUP.FAILED.html"><code>BACKUP.FAILED</code></a></li>
+<li><a href="BACKUP.MISSING.html"><code>BACKUP.MISSING</code></a></li>
+<li><a href="BACKUP.NO_RESULT.html"><code>BACKUP.NO_RESULT</code></a></li>
+<li><a href="BACKUP.RECENT.html"><code>BACKUP.RECENT</code></a></li>
+<li><a href="BACKUP.STALE.html"><code>BACKUP.STALE</code></a></li>
+<li><a href="SIGNATURE.DATA.AT_RISK.html"><code>SIGNATURE.DATA.AT_RISK</code></a></li>
+</ul>
+<h2>Devices (4)</h2><ul class="ids">
+<li><a href="DEVICES.DISABLED.html"><code>DEVICES.DISABLED</code></a></li>
+<li><a href="DEVICES.PROBLEM.FAIL.html"><code>DEVICES.PROBLEM.FAIL</code></a></li>
+<li><a href="DEVICES.PROBLEM.NONE.html"><code>DEVICES.PROBLEM.NONE</code></a></li>
+<li><a href="DEVICES.PROBLEM.WARN.html"><code>DEVICES.PROBLEM.WARN</code></a></li>
+</ul>
+<h2>Disk (35)</h2><ul class="ids">
+<li><a href="DISK.BUS.INFO.html"><code>DISK.BUS.INFO</code></a></li>
+<li><a href="DISK.CHKDSK.SCHEDULED.html"><code>DISK.CHKDSK.SCHEDULED</code></a></li>
+<li><a href="DISK.FILESYSTEM.ERRORS.html"><code>DISK.FILESYSTEM.ERRORS</code></a></li>
+<li><a href="DISK.FILESYSTEM.OK.html"><code>DISK.FILESYSTEM.OK</code></a></li>
+<li><a href="DISK.FILESYSTEM.SCAN_INCOMPLETE.html"><code>DISK.FILESYSTEM.SCAN_INCOMPLETE</code></a></li>
+<li><a href="DISK.FORECAST.FULL_SOON.html"><code>DISK.FORECAST.FULL_SOON</code></a></li>
+<li><a href="DISK.FORECAST.INSUFFICIENT_DATA.html"><code>DISK.FORECAST.INSUFFICIENT_DATA</code></a></li>
+<li><a href="DISK.FORECAST.OK.html"><code>DISK.FORECAST.OK</code></a></li>
+<li><a href="DISK.FORECAST.STABLE.html"><code>DISK.FORECAST.STABLE</code></a></li>
+<li><a href="DISK.NVME.CRITICAL_WARNING.html"><code>DISK.NVME.CRITICAL_WARNING</code></a></li>
+<li><a href="DISK.NVME.MEDIA_ERRORS.html"><code>DISK.NVME.MEDIA_ERRORS</code></a></li>
+<li><a href="DISK.NVME.UNSAFE_SHUTDOWNS.html"><code>DISK.NVME.UNSAFE_SHUTDOWNS</code></a></li>
+<li><a href="DISK.REALLOCATED.TREND.html"><code>DISK.REALLOCATED.TREND</code></a></li>
+<li><a href="DISK.RELIABILITY.INFO.html"><code>DISK.RELIABILITY.INFO</code></a></li>
+<li><a href="DISK.RELIABILITY.READ_WRITE_ERRORS.html"><code>DISK.RELIABILITY.READ_WRITE_ERRORS</code></a></li>
+<li><a href="DISK.RELIABILITY.REALLOCATED_SECTORS.html"><code>DISK.RELIABILITY.REALLOCATED_SECTORS</code></a></li>
+<li><a href="DISK.RELIABILITY.TEMPERATURE_HIGH.html"><code>DISK.RELIABILITY.TEMPERATURE_HIGH</code></a></li>
+<li><a href="DISK.SMART.CRC_ERRORS.html"><code>DISK.SMART.CRC_ERRORS</code></a></li>
+<li><a href="DISK.SMART.NOT_SUPPORTED.html"><code>DISK.SMART.NOT_SUPPORTED</code></a></li>
+<li><a href="DISK.SMART.OFFLINE_UNCORRECTABLE.html"><code>DISK.SMART.OFFLINE_UNCORRECTABLE</code></a></li>
+<li><a href="DISK.SMART.OK.html"><code>DISK.SMART.OK</code></a></li>
+<li><a href="DISK.SMART.PENDING_SECTORS.html"><code>DISK.SMART.PENDING_SECTORS</code></a></li>
+<li><a href="DISK.SMART.PREDICTIVE_FAILURE.html"><code>DISK.SMART.PREDICTIVE_FAILURE</code></a></li>
+<li><a href="DISK.SMART.UNHEALTHY.html"><code>DISK.SMART.UNHEALTHY</code></a></li>
+<li><a href="DISK.SMART.UNKNOWN.html"><code>DISK.SMART.UNKNOWN</code></a></li>
+<li><a href="DISK.SMART.WARNING.html"><code>DISK.SMART.WARNING</code></a></li>
+<li><a href="DISK.SPACE.CRITICAL.html"><code>DISK.SPACE.CRITICAL</code></a></li>
+<li><a href="DISK.SPACE.LOW.html"><code>DISK.SPACE.LOW</code></a></li>
+<li><a href="DISK.SPACE.OK.html"><code>DISK.SPACE.OK</code></a></li>
+<li><a href="DISK.WEAR.CRITICAL.html"><code>DISK.WEAR.CRITICAL</code></a></li>
+<li><a href="DISK.WEAR.HIGH.html"><code>DISK.WEAR.HIGH</code></a></li>
+<li><a href="DISK.WEAR.TREND.html"><code>DISK.WEAR.TREND</code></a></li>
+<li><a href="SIGNATURE.HARDWARE.DISK_FAILING.html"><code>SIGNATURE.HARDWARE.DISK_FAILING</code></a></li>
+<li><a href="SIGNATURE.PERFORMANCE.SATURATION.html"><code>SIGNATURE.PERFORMANCE.SATURATION</code></a></li>
+<li><a href="SIGNATURE.STORAGE.THERMAL.html"><code>SIGNATURE.STORAGE.THERMAL</code></a></li>
+</ul>
+<h2>Drivers (39)</h2><ul class="ids">
+<li><a href="DRIVERS.BACKUP.FAILED.html"><code>DRIVERS.BACKUP.FAILED</code></a></li>
+<li><a href="DRIVERS.BACKUP.OK.html"><code>DRIVERS.BACKUP.OK</code></a></li>
+<li><a href="DRIVERS.BIOS.AVAILABLE.html"><code>DRIVERS.BIOS.AVAILABLE</code></a></li>
+<li><a href="DRIVERS.BIOS.CURRENT.html"><code>DRIVERS.BIOS.CURRENT</code></a></li>
+<li><a href="DRIVERS.BIOS.PREREQ.html"><code>DRIVERS.BIOS.PREREQ</code></a></li>
+<li><a href="DRIVERS.CURRENT.html"><code>DRIVERS.CURRENT</code></a></li>
+<li><a href="DRIVERS.DEVICE.PROBLEM.html"><code>DRIVERS.DEVICE.PROBLEM</code></a></li>
+<li><a href="DRIVERS.FIRMWARE.AVAILABLE.html"><code>DRIVERS.FIRMWARE.AVAILABLE</code></a></li>
+<li><a href="DRIVERS.FIRMWARE.SKIPPED.html"><code>DRIVERS.FIRMWARE.SKIPPED</code></a></li>
+<li><a href="DRIVERS.FIRMWARE.UNCERTAIN.html"><code>DRIVERS.FIRMWARE.UNCERTAIN</code></a></li>
+<li><a href="DRIVERS.INSTALL.FAILED.html"><code>DRIVERS.INSTALL.FAILED</code></a></li>
+<li><a href="DRIVERS.INSTALL.NO_PACKS.html"><code>DRIVERS.INSTALL.NO_PACKS</code></a></li>
+<li><a href="DRIVERS.INSTALL.SKIPPED_BATTERY.html"><code>DRIVERS.INSTALL.SKIPPED_BATTERY</code></a></li>
+<li><a href="DRIVERS.INSTALLED.html"><code>DRIVERS.INSTALLED</code></a></li>
+<li><a href="DRIVERS.MISSING.html"><code>DRIVERS.MISSING</code></a></li>
+<li><a href="DRIVERS.OUTDATED.html"><code>DRIVERS.OUTDATED</code></a></li>
+<li><a href="DRIVERS.SCAN.FAILED.html"><code>DRIVERS.SCAN.FAILED</code></a></li>
+<li><a href="DRIVERS.SCAN.SKIPPED.html"><code>DRIVERS.SCAN.SKIPPED</code></a></li>
+<li><a href="DRIVERS.SCAN.UNREADABLE.html"><code>DRIVERS.SCAN.UNREADABLE</code></a></li>
+<li><a href="DRIVERS.SOURCE.FAILED.html"><code>DRIVERS.SOURCE.FAILED</code></a></li>
+<li><a href="DRIVERS.TOOL.CACHE_LARGE.html"><code>DRIVERS.TOOL.CACHE_LARGE</code></a></li>
+<li><a href="DRIVERS.TOOL.DISABLED.html"><code>DRIVERS.TOOL.DISABLED</code></a></li>
+<li><a href="DRIVERS.TOOL.INDEX_MISSING.html"><code>DRIVERS.TOOL.INDEX_MISSING</code></a></li>
+<li><a href="DRIVERS.TOOL.INDEX_STALE.html"><code>DRIVERS.TOOL.INDEX_STALE</code></a></li>
+<li><a href="DRIVERS.TOOL.INDEX_UPDATED.html"><code>DRIVERS.TOOL.INDEX_UPDATED</code></a></li>
+<li><a href="DRIVERS.TOOL.MISSING.html"><code>DRIVERS.TOOL.MISSING</code></a></li>
+<li><a href="DRIVERS.TOOL.NOT_ADMIN.html"><code>DRIVERS.TOOL.NOT_ADMIN</code></a></li>
+<li><a href="DRIVERS.TOOL.OK.html"><code>DRIVERS.TOOL.OK</code></a></li>
+<li><a href="DRIVERS.TOOL.PACKS_MISSING.html"><code>DRIVERS.TOOL.PACKS_MISSING</code></a></li>
+<li><a href="DRIVERS.TOOL.PACKS_OFFLINE.html"><code>DRIVERS.TOOL.PACKS_OFFLINE</code></a></li>
+<li><a href="DRIVERS.TOOL.PROVISION_FAILED.html"><code>DRIVERS.TOOL.PROVISION_FAILED</code></a></li>
+<li><a href="DRIVERS.TOOL.PROVISIONED.html"><code>DRIVERS.TOOL.PROVISIONED</code></a></li>
+<li><a href="DRIVERS.TOOL.UPDATE_AVAILABLE.html"><code>DRIVERS.TOOL.UPDATE_AVAILABLE</code></a></li>
+<li><a href="DRIVERS.TOOL.UPDATE_FAILED.html"><code>DRIVERS.TOOL.UPDATE_FAILED</code></a></li>
+<li><a href="DRIVERS.UPDATE.ADVANCED.html"><code>DRIVERS.UPDATE.ADVANCED</code></a></li>
+<li><a href="DRIVERS.UPDATE.BLOCKED.html"><code>DRIVERS.UPDATE.BLOCKED</code></a></li>
+<li><a href="DRIVERS.UPDATE.MANUAL.html"><code>DRIVERS.UPDATE.MANUAL</code></a></li>
+<li><a href="DRIVERS.UPDATE.OPTIONAL.html"><code>DRIVERS.UPDATE.OPTIONAL</code></a></li>
+<li><a href="DRIVERS.UPDATE.RECOMMENDED.html"><code>DRIVERS.UPDATE.RECOMMENDED</code></a></li>
+</ul>
+<h2>Events (13)</h2><ul class="ids">
+<li><a href="EVENTS.BSOD.FOUND.html"><code>EVENTS.BSOD.FOUND</code></a></li>
+<li><a href="EVENTS.BSOD.NONE.html"><code>EVENTS.BSOD.NONE</code></a></li>
+<li><a href="EVENTS.CRITICAL.COUNT.html"><code>EVENTS.CRITICAL.COUNT</code></a></li>
+<li><a href="EVENTS.CRITICAL.FEW.html"><code>EVENTS.CRITICAL.FEW</code></a></li>
+<li><a href="EVENTS.CRITICAL.MANY.html"><code>EVENTS.CRITICAL.MANY</code></a></li>
+<li><a href="EVENTS.CRITICAL.NONE.html"><code>EVENTS.CRITICAL.NONE</code></a></li>
+<li><a href="EVENTS.DISK.ERRORS.html"><code>EVENTS.DISK.ERRORS</code></a></li>
+<li><a href="EVENTS.DISK.NONE.html"><code>EVENTS.DISK.NONE</code></a></li>
+<li><a href="EVENTS.POWER.OK.html"><code>EVENTS.POWER.OK</code></a></li>
+<li><a href="EVENTS.POWER.UNEXPECTED_SHUTDOWN.html"><code>EVENTS.POWER.UNEXPECTED_SHUTDOWN</code></a></li>
+<li><a href="EVENTS.SOURCE.TOP.html"><code>EVENTS.SOURCE.TOP</code></a></li>
+<li><a href="EVENTS.WHEA.FOUND.html"><code>EVENTS.WHEA.FOUND</code></a></li>
+<li><a href="EVENTS.WHEA.NONE.html"><code>EVENTS.WHEA.NONE</code></a></li>
+</ul>
+<h2>Integrity (9)</h2><ul class="ids">
+<li><a href="SYSTEM.INTEGRITY.IMAGE_OK.html"><code>SYSTEM.INTEGRITY.IMAGE_OK</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.IMAGE_REPAIRABLE.html"><code>SYSTEM.INTEGRITY.IMAGE_REPAIRABLE</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.IMAGE_UNKNOWN.html"><code>SYSTEM.INTEGRITY.IMAGE_UNKNOWN</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.IMAGE_UNREPAIRABLE.html"><code>SYSTEM.INTEGRITY.IMAGE_UNREPAIRABLE</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.REPAIR_DONE.html"><code>SYSTEM.INTEGRITY.REPAIR_DONE</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.REPAIR_FAILED.html"><code>SYSTEM.INTEGRITY.REPAIR_FAILED</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.SFC_OK.html"><code>SYSTEM.INTEGRITY.SFC_OK</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.SFC_TIMEOUT.html"><code>SYSTEM.INTEGRITY.SFC_TIMEOUT</code></a></li>
+<li><a href="SYSTEM.INTEGRITY.SFC_VIOLATIONS.html"><code>SYSTEM.INTEGRITY.SFC_VIOLATIONS</code></a></li>
+</ul>
+<h2>Inventory (17)</h2><ul class="ids">
+<li><a href="INVENTORY.GPU.html"><code>INVENTORY.GPU</code></a></li>
+<li><a href="INVENTORY.LICENSE.OFFICE.html"><code>INVENTORY.LICENSE.OFFICE</code></a></li>
+<li><a href="INVENTORY.LICENSE.PRODUCT_KEY.html"><code>INVENTORY.LICENSE.PRODUCT_KEY</code></a></li>
+<li><a href="INVENTORY.LICENSE.WINDOWS.html"><code>INVENTORY.LICENSE.WINDOWS</code></a></li>
+<li><a href="INVENTORY.LICENSE.WINDOWS_NOT_LICENSED.html"><code>INVENTORY.LICENSE.WINDOWS_NOT_LICENSED</code></a></li>
+<li><a href="INVENTORY.MEMORY.html"><code>INVENTORY.MEMORY</code></a></li>
+<li><a href="INVENTORY.MONITOR.html"><code>INVENTORY.MONITOR</code></a></li>
+<li><a href="INVENTORY.SERIAL.MISSING.html"><code>INVENTORY.SERIAL.MISSING</code></a></li>
+<li><a href="INVENTORY.SOFTWARE.AUTHORIZED_OK.html"><code>INVENTORY.SOFTWARE.AUTHORIZED_OK</code></a></li>
+<li><a href="INVENTORY.SOFTWARE.COUNT.html"><code>INVENTORY.SOFTWARE.COUNT</code></a></li>
+<li><a href="INVENTORY.SOFTWARE.DENIED.html"><code>INVENTORY.SOFTWARE.DENIED</code></a></li>
+<li><a href="INVENTORY.SOFTWARE.UNAUTHORIZED.html"><code>INVENTORY.SOFTWARE.UNAUTHORIZED</code></a></li>
+<li><a href="INVENTORY.SYSTEM.html"><code>INVENTORY.SYSTEM</code></a></li>
+<li><a href="INVENTORY.WARRANTY.EXPIRED.html"><code>INVENTORY.WARRANTY.EXPIRED</code></a></li>
+<li><a href="INVENTORY.WARRANTY.EXPIRING.html"><code>INVENTORY.WARRANTY.EXPIRING</code></a></li>
+<li><a href="INVENTORY.WARRANTY.OK.html"><code>INVENTORY.WARRANTY.OK</code></a></li>
+<li><a href="INVENTORY.WARRANTY.UNKNOWN.html"><code>INVENTORY.WARRANTY.UNKNOWN</code></a></li>
+</ul>
+<h2>Network (20)</h2><ul class="ids">
+<li><a href="NETWORK.ADAPTER.NONE.html"><code>NETWORK.ADAPTER.NONE</code></a></li>
+<li><a href="NETWORK.ADAPTER.UP.html"><code>NETWORK.ADAPTER.UP</code></a></li>
+<li><a href="NETWORK.DNS.FAIL.html"><code>NETWORK.DNS.FAIL</code></a></li>
+<li><a href="NETWORK.DNS.OK.html"><code>NETWORK.DNS.OK</code></a></li>
+<li><a href="NETWORK.HOSTS.CLEAN.html"><code>NETWORK.HOSTS.CLEAN</code></a></li>
+<li><a href="NETWORK.HOSTS.CUSTOM.html"><code>NETWORK.HOSTS.CUSTOM</code></a></li>
+<li><a href="NETWORK.HOSTS.SUSPICIOUS.html"><code>NETWORK.HOSTS.SUSPICIOUS</code></a></li>
+<li><a href="NETWORK.INTERNET.DOWN.html"><code>NETWORK.INTERNET.DOWN</code></a></li>
+<li><a href="NETWORK.INTERNET.OK.html"><code>NETWORK.INTERNET.OK</code></a></li>
+<li><a href="NETWORK.INTERNET.SKIPPED.html"><code>NETWORK.INTERNET.SKIPPED</code></a></li>
+<li><a href="NETWORK.INTERNET.SLOW.html"><code>NETWORK.INTERNET.SLOW</code></a></li>
+<li><a href="NETWORK.IP.APIPA.html"><code>NETWORK.IP.APIPA</code></a></li>
+<li><a href="NETWORK.IP.NO_DNS.html"><code>NETWORK.IP.NO_DNS</code></a></li>
+<li><a href="NETWORK.IP.NO_GATEWAY.html"><code>NETWORK.IP.NO_GATEWAY</code></a></li>
+<li><a href="NETWORK.IP.NONE.html"><code>NETWORK.IP.NONE</code></a></li>
+<li><a href="NETWORK.IP.OK.html"><code>NETWORK.IP.OK</code></a></li>
+<li><a href="NETWORK.IP.VIRTUAL.html"><code>NETWORK.IP.VIRTUAL</code></a></li>
+<li><a href="NETWORK.PROXY.ENABLED.html"><code>NETWORK.PROXY.ENABLED</code></a></li>
+<li><a href="NETWORK.PROXY.NONE.html"><code>NETWORK.PROXY.NONE</code></a></li>
+<li><a href="NETWORK.STACK.RESET.html"><code>NETWORK.STACK.RESET</code></a></li>
+</ul>
+<h2>Performance (16)</h2><ul class="ids">
+<li><a href="PERFORMANCE.CPU.HIGH.html"><code>PERFORMANCE.CPU.HIGH</code></a></li>
+<li><a href="PERFORMANCE.CPU.OK.html"><code>PERFORMANCE.CPU.OK</code></a></li>
+<li><a href="PERFORMANCE.PAGEFILE.HIGH.html"><code>PERFORMANCE.PAGEFILE.HIGH</code></a></li>
+<li><a href="PERFORMANCE.PAGEFILE.OK.html"><code>PERFORMANCE.PAGEFILE.OK</code></a></li>
+<li><a href="PERFORMANCE.POWERPLAN.INFO.html"><code>PERFORMANCE.POWERPLAN.INFO</code></a></li>
+<li><a href="PERFORMANCE.POWERPLAN.SAVER.html"><code>PERFORMANCE.POWERPLAN.SAVER</code></a></li>
+<li><a href="PERFORMANCE.PROCESS.TOP.html"><code>PERFORMANCE.PROCESS.TOP</code></a></li>
+<li><a href="STARTUP.BOOT.OK.html"><code>STARTUP.BOOT.OK</code></a></li>
+<li><a href="STARTUP.BOOT.SLOW.html"><code>STARTUP.BOOT.SLOW</code></a></li>
+<li><a href="STARTUP.BOOT.VERY_SLOW.html"><code>STARTUP.BOOT.VERY_SLOW</code></a></li>
+<li><a href="STARTUP.FASTBOOT.OFF.html"><code>STARTUP.FASTBOOT.OFF</code></a></li>
+<li><a href="STARTUP.FASTBOOT.ON.html"><code>STARTUP.FASTBOOT.ON</code></a></li>
+<li><a href="STARTUP.FOLDER.ITEMS.html"><code>STARTUP.FOLDER.ITEMS</code></a></li>
+<li><a href="STARTUP.ITEMS.HIGH.html"><code>STARTUP.ITEMS.HIGH</code></a></li>
+<li><a href="STARTUP.ITEMS.MANY.html"><code>STARTUP.ITEMS.MANY</code></a></li>
+<li><a href="STARTUP.ITEMS.OK.html"><code>STARTUP.ITEMS.OK</code></a></li>
+</ul>
+<h2>Power (9)</h2><ul class="ids">
+<li><a href="POWER.BATTERY.ABSENT.html"><code>POWER.BATTERY.ABSENT</code></a></li>
+<li><a href="POWER.BATTERY.CHARGE.html"><code>POWER.BATTERY.CHARGE</code></a></li>
+<li><a href="POWER.BATTERY.REPORT_UNAVAILABLE.html"><code>POWER.BATTERY.REPORT_UNAVAILABLE</code></a></li>
+<li><a href="POWER.BATTERY.WEAR_HIGH.html"><code>POWER.BATTERY.WEAR_HIGH</code></a></li>
+<li><a href="POWER.BATTERY.WEAR_OK.html"><code>POWER.BATTERY.WEAR_OK</code></a></li>
+<li><a href="POWER.BATTERY.WORN_OUT.html"><code>POWER.BATTERY.WORN_OUT</code></a></li>
+<li><a href="POWER.THERMAL.CRITICAL.html"><code>POWER.THERMAL.CRITICAL</code></a></li>
+<li><a href="POWER.THERMAL.HIGH.html"><code>POWER.THERMAL.HIGH</code></a></li>
+<li><a href="POWER.THERMAL.OK.html"><code>POWER.THERMAL.OK</code></a></li>
+</ul>
+<h2>Run (15)</h2><ul class="ids">
+<li><a href="LICENSE.EXPIRED.html"><code>LICENSE.EXPIRED</code></a></li>
+<li><a href="LICENSE.EXPIRING.html"><code>LICENSE.EXPIRING</code></a></li>
+<li><a href="LICENSE.GRACE.html"><code>LICENSE.GRACE</code></a></li>
+<li><a href="LICENSE.INVALID.html"><code>LICENSE.INVALID</code></a></li>
+<li><a href="RUN.CANCELLED.html"><code>RUN.CANCELLED</code></a></li>
+<li><a href="RUN.FIX.TIMEOUT.html"><code>RUN.FIX.TIMEOUT</code></a></li>
+<li><a href="RUN.FIXES.BUDGET_EXHAUSTED.html"><code>RUN.FIXES.BUDGET_EXHAUSTED</code></a></li>
+<li><a href="RUN.LOCK.BUSY.html"><code>RUN.LOCK.BUSY</code></a></li>
+<li><a href="RUN.MODE.CHECK_ONLY.html"><code>RUN.MODE.CHECK_ONLY</code></a></li>
+<li><a href="RUN.POWER.ON_BATTERY.html"><code>RUN.POWER.ON_BATTERY</code></a></li>
+<li><a href="RUN.PRIVILEGES.LIMITED.html"><code>RUN.PRIVILEGES.LIMITED</code></a></li>
+<li><a href="RUN.QUEUE.TRIMMED.html"><code>RUN.QUEUE.TRIMMED</code></a></li>
+<li><a href="RUN.RESTOREPOINT.MISSING.html"><code>RUN.RESTOREPOINT.MISSING</code></a></li>
+<li><a href="RUN.UPDATE.AVAILABLE.html"><code>RUN.UPDATE.AVAILABLE</code></a></li>
+<li><a href="RUN.WINDOW.OUTSIDE.html"><code>RUN.WINDOW.OUTSIDE</code></a></li>
+</ul>
+<h2>Security (122)</h2><ul class="ids">
+<li><a href="SECURITY.ACCOUNT.ADMINISTRATOR_ENABLED.html"><code>SECURITY.ACCOUNT.ADMINISTRATOR_ENABLED</code></a></li>
+<li><a href="SECURITY.ACCOUNT.GUEST_ENABLED.html"><code>SECURITY.ACCOUNT.GUEST_ENABLED</code></a></li>
+<li><a href="SECURITY.ACCOUNT.INACTIVE.html"><code>SECURITY.ACCOUNT.INACTIVE</code></a></li>
+<li><a href="SECURITY.ACCOUNT.NEVER_USED.html"><code>SECURITY.ACCOUNT.NEVER_USED</code></a></li>
+<li><a href="SECURITY.ACCOUNT.PASSWORD_NEVER_EXPIRES.html"><code>SECURITY.ACCOUNT.PASSWORD_NEVER_EXPIRES</code></a></li>
+<li><a href="SECURITY.ADMINS.EXTRA.html"><code>SECURITY.ADMINS.EXTRA</code></a></li>
+<li><a href="SECURITY.ADMINS.OK.html"><code>SECURITY.ADMINS.OK</code></a></li>
+<li><a href="SECURITY.ASR.ACTIVE.html"><code>SECURITY.ASR.ACTIVE</code></a></li>
+<li><a href="SECURITY.ASR.AUDIT_ENABLED.html"><code>SECURITY.ASR.AUDIT_ENABLED</code></a></li>
+<li><a href="SECURITY.ASR.AUDIT_ONLY.html"><code>SECURITY.ASR.AUDIT_ONLY</code></a></li>
+<li><a href="SECURITY.ASR.NONE.html"><code>SECURITY.ASR.NONE</code></a></li>
+<li><a href="SECURITY.AUTORUN.IFEO.html"><code>SECURITY.AUTORUN.IFEO</code></a></li>
+<li><a href="SECURITY.AUTORUN.INVENTORY.html"><code>SECURITY.AUTORUN.INVENTORY</code></a></li>
+<li><a href="SECURITY.AUTORUN.SUSPICIOUS.html"><code>SECURITY.AUTORUN.SUSPICIOUS</code></a></li>
+<li><a href="SECURITY.AUTORUN.WMI_NONE.html"><code>SECURITY.AUTORUN.WMI_NONE</code></a></li>
+<li><a href="SECURITY.AUTORUN.WMI_PRESENT.html"><code>SECURITY.AUTORUN.WMI_PRESENT</code></a></li>
+<li><a href="SECURITY.AUTORUN.WMI_SUBSCRIPTION.html"><code>SECURITY.AUTORUN.WMI_SUBSCRIPTION</code></a></li>
+<li><a href="SECURITY.AV.THIRDPARTY_DEGRADED.html"><code>SECURITY.AV.THIRDPARTY_DEGRADED</code></a></li>
+<li><a href="SECURITY.AV.THIRDPARTY_OK.html"><code>SECURITY.AV.THIRDPARTY_OK</code></a></li>
+<li><a href="SECURITY.BITLOCKER.ESCROW_OK.html"><code>SECURITY.BITLOCKER.ESCROW_OK</code></a></li>
+<li><a href="SECURITY.BITLOCKER.NO_ESCROW.html"><code>SECURITY.BITLOCKER.NO_ESCROW</code></a></li>
+<li><a href="SECURITY.BITLOCKER.NO_RECOVERY_KEY.html"><code>SECURITY.BITLOCKER.NO_RECOVERY_KEY</code></a></li>
+<li><a href="SECURITY.BITLOCKER.OFF.html"><code>SECURITY.BITLOCKER.OFF</code></a></li>
+<li><a href="SECURITY.BITLOCKER.ON.html"><code>SECURITY.BITLOCKER.ON</code></a></li>
+<li><a href="SECURITY.BITLOCKER.SUSPENDED.html"><code>SECURITY.BITLOCKER.SUSPENDED</code></a></li>
+<li><a href="SECURITY.BITLOCKER.UNAVAILABLE.html"><code>SECURITY.BITLOCKER.UNAVAILABLE</code></a></li>
+<li><a href="SECURITY.BITLOCKER.WEAK_CIPHER.html"><code>SECURITY.BITLOCKER.WEAK_CIPHER</code></a></li>
+<li><a href="SECURITY.CERT.EXPIRED.html"><code>SECURITY.CERT.EXPIRED</code></a></li>
+<li><a href="SECURITY.CERT.EXPIRING.html"><code>SECURITY.CERT.EXPIRING</code></a></li>
+<li><a href="SECURITY.CERT.INTERCEPTION_ROOT.html"><code>SECURITY.CERT.INTERCEPTION_ROOT</code></a></li>
+<li><a href="SECURITY.CERT.OK.html"><code>SECURITY.CERT.OK</code></a></li>
+<li><a href="SECURITY.CERT.ROOT_EXPIRED.html"><code>SECURITY.CERT.ROOT_EXPIRED</code></a></li>
+<li><a href="SECURITY.CERT.ROOT_INVENTORY.html"><code>SECURITY.CERT.ROOT_INVENTORY</code></a></li>
+<li><a href="SECURITY.CERT.ROOT_WEAK.html"><code>SECURITY.CERT.ROOT_WEAK</code></a></li>
+<li><a href="SECURITY.CREDGUARD.OFF.html"><code>SECURITY.CREDGUARD.OFF</code></a></li>
+<li><a href="SECURITY.CREDGUARD.ON.html"><code>SECURITY.CREDGUARD.ON</code></a></li>
+<li><a href="SECURITY.CREDGUARD.PENDING_REBOOT.html"><code>SECURITY.CREDGUARD.PENDING_REBOOT</code></a></li>
+<li><a href="SECURITY.DEFENDER.DISABLED.html"><code>SECURITY.DEFENDER.DISABLED</code></a></li>
+<li><a href="SECURITY.DEFENDER.EXCLUSION_DANGEROUS.html"><code>SECURITY.DEFENDER.EXCLUSION_DANGEROUS</code></a></li>
+<li><a href="SECURITY.DEFENDER.EXCLUSION_EXECUTABLE.html"><code>SECURITY.DEFENDER.EXCLUSION_EXECUTABLE</code></a></li>
+<li><a href="SECURITY.DEFENDER.EXCLUSIONS_NONE.html"><code>SECURITY.DEFENDER.EXCLUSIONS_NONE</code></a></li>
+<li><a href="SECURITY.DEFENDER.EXCLUSIONS_PRESENT.html"><code>SECURITY.DEFENDER.EXCLUSIONS_PRESENT</code></a></li>
+<li><a href="SECURITY.DEFENDER.OK.html"><code>SECURITY.DEFENDER.OK</code></a></li>
+<li><a href="SECURITY.DEFENDER.PASSIVE.html"><code>SECURITY.DEFENDER.PASSIVE</code></a></li>
+<li><a href="SECURITY.DEFENDER.SCAN_NEVER.html"><code>SECURITY.DEFENDER.SCAN_NEVER</code></a></li>
+<li><a href="SECURITY.DEFENDER.SCAN_OK.html"><code>SECURITY.DEFENDER.SCAN_OK</code></a></li>
+<li><a href="SECURITY.DEFENDER.SCAN_OLD.html"><code>SECURITY.DEFENDER.SCAN_OLD</code></a></li>
+<li><a href="SECURITY.DEFENDER.SIGNATURES_OLD.html"><code>SECURITY.DEFENDER.SIGNATURES_OLD</code></a></li>
+<li><a href="SECURITY.DEFENDER.SIGNATURES_UPDATED.html"><code>SECURITY.DEFENDER.SIGNATURES_UPDATED</code></a></li>
+<li><a href="SECURITY.DEFENDER.TAMPER_OFF.html"><code>SECURITY.DEFENDER.TAMPER_OFF</code></a></li>
+<li><a href="SECURITY.DEFENDER.TAMPER_ON.html"><code>SECURITY.DEFENDER.TAMPER_ON</code></a></li>
+<li><a href="SECURITY.EOL.EXPIRED.html"><code>SECURITY.EOL.EXPIRED</code></a></li>
+<li><a href="SECURITY.EOL.OK.html"><code>SECURITY.EOL.OK</code></a></li>
+<li><a href="SECURITY.EOL.SOON.html"><code>SECURITY.EOL.SOON</code></a></li>
+<li><a href="SECURITY.EOL.UNKNOWN.html"><code>SECURITY.EOL.UNKNOWN</code></a></li>
+<li><a href="SECURITY.FIREWALL.APP_RULES.html"><code>SECURITY.FIREWALL.APP_RULES</code></a></li>
+<li><a href="SECURITY.FIREWALL.INBOUND_ANY.html"><code>SECURITY.FIREWALL.INBOUND_ANY</code></a></li>
+<li><a href="SECURITY.FIREWALL.OFF.html"><code>SECURITY.FIREWALL.OFF</code></a></li>
+<li><a href="SECURITY.FIREWALL.ON.html"><code>SECURITY.FIREWALL.ON</code></a></li>
+<li><a href="SECURITY.FIREWALL.RULES_OK.html"><code>SECURITY.FIREWALL.RULES_OK</code></a></li>
+<li><a href="SECURITY.HVCI.OFF.html"><code>SECURITY.HVCI.OFF</code></a></li>
+<li><a href="SECURITY.HVCI.ON.html"><code>SECURITY.HVCI.ON</code></a></li>
+<li><a href="SECURITY.HVCI.PENDING_REBOOT.html"><code>SECURITY.HVCI.PENDING_REBOOT</code></a></li>
+<li><a href="SECURITY.LAPS.MISSING.html"><code>SECURITY.LAPS.MISSING</code></a></li>
+<li><a href="SECURITY.LAPS.PRESENT.html"><code>SECURITY.LAPS.PRESENT</code></a></li>
+<li><a href="SECURITY.LLMNR.DISABLED.html"><code>SECURITY.LLMNR.DISABLED</code></a></li>
+<li><a href="SECURITY.LLMNR.DISABLED_FIXED.html"><code>SECURITY.LLMNR.DISABLED_FIXED</code></a></li>
+<li><a href="SECURITY.LLMNR.ENABLED.html"><code>SECURITY.LLMNR.ENABLED</code></a></li>
+<li><a href="SECURITY.LMHASH.STORED.html"><code>SECURITY.LMHASH.STORED</code></a></li>
+<li><a href="SECURITY.LSA.PROTECTED.html"><code>SECURITY.LSA.PROTECTED</code></a></li>
+<li><a href="SECURITY.LSA.UNPROTECTED.html"><code>SECURITY.LSA.UNPROTECTED</code></a></li>
+<li><a href="SECURITY.NETBIOS.DISABLED.html"><code>SECURITY.NETBIOS.DISABLED</code></a></li>
+<li><a href="SECURITY.NETBIOS.DISABLED_FIXED.html"><code>SECURITY.NETBIOS.DISABLED_FIXED</code></a></li>
+<li><a href="SECURITY.NETBIOS.ENABLED.html"><code>SECURITY.NETBIOS.ENABLED</code></a></li>
+<li><a href="SECURITY.NTLM.OK.html"><code>SECURITY.NTLM.OK</code></a></li>
+<li><a href="SECURITY.NTLM.WEAK.html"><code>SECURITY.NTLM.WEAK</code></a></li>
+<li><a href="SECURITY.PATCH.AUTOUPDATE_OFF.html"><code>SECURITY.PATCH.AUTOUPDATE_OFF</code></a></li>
+<li><a href="SECURITY.PATCH.CURRENT.html"><code>SECURITY.PATCH.CURRENT</code></a></li>
+<li><a href="SECURITY.PATCH.DEFERRAL_LONG.html"><code>SECURITY.PATCH.DEFERRAL_LONG</code></a></li>
+<li><a href="SECURITY.PATCH.NO_SECURITY_HISTORY.html"><code>SECURITY.PATCH.NO_SECURITY_HISTORY</code></a></li>
+<li><a href="SECURITY.PATCH.REBOOT_PENDING.html"><code>SECURITY.PATCH.REBOOT_PENDING</code></a></li>
+<li><a href="SECURITY.PATCH.STALE.html"><code>SECURITY.PATCH.STALE</code></a></li>
+<li><a href="SECURITY.PATCH.WSUS.html"><code>SECURITY.PATCH.WSUS</code></a></li>
+<li><a href="SECURITY.POLICY.ACL_FIXED.html"><code>SECURITY.POLICY.ACL_FIXED</code></a></li>
+<li><a href="SECURITY.POLICY.NONE.html"><code>SECURITY.POLICY.NONE</code></a></li>
+<li><a href="SECURITY.POLICY.OK.html"><code>SECURITY.POLICY.OK</code></a></li>
+<li><a href="SECURITY.POLICY.SECRET_PLAINTEXT.html"><code>SECURITY.POLICY.SECRET_PLAINTEXT</code></a></li>
+<li><a href="SECURITY.POLICY.SECRET_UNREADABLE.html"><code>SECURITY.POLICY.SECRET_UNREADABLE</code></a></li>
+<li><a href="SECURITY.POLICY.SIGNATURE_INVALID.html"><code>SECURITY.POLICY.SIGNATURE_INVALID</code></a></li>
+<li><a href="SECURITY.POLICY.SIGNATURE_NO_KEY.html"><code>SECURITY.POLICY.SIGNATURE_NO_KEY</code></a></li>
+<li><a href="SECURITY.POLICY.SIGNED.html"><code>SECURITY.POLICY.SIGNED</code></a></li>
+<li><a href="SECURITY.POLICY.UNSIGNED.html"><code>SECURITY.POLICY.UNSIGNED</code></a></li>
+<li><a href="SECURITY.POLICY.WRITABLE.html"><code>SECURITY.POLICY.WRITABLE</code></a></li>
+<li><a href="SECURITY.POWERSHELLV2.DISABLED.html"><code>SECURITY.POWERSHELLV2.DISABLED</code></a></li>
+<li><a href="SECURITY.POWERSHELLV2.ENABLED.html"><code>SECURITY.POWERSHELLV2.ENABLED</code></a></li>
+<li><a href="SECURITY.PROTOCOLS.OK.html"><code>SECURITY.PROTOCOLS.OK</code></a></li>
+<li><a href="SECURITY.RDP.DISABLED.html"><code>SECURITY.RDP.DISABLED</code></a></li>
+<li><a href="SECURITY.RDP.ENABLED.html"><code>SECURITY.RDP.ENABLED</code></a></li>
+<li><a href="SECURITY.RDP.EXPOSED.html"><code>SECURITY.RDP.EXPOSED</code></a></li>
+<li><a href="SECURITY.RDP.NLA_OFF.html"><code>SECURITY.RDP.NLA_OFF</code></a></li>
+<li><a href="SECURITY.RDP.NONSTANDARD_PORT.html"><code>SECURITY.RDP.NONSTANDARD_PORT</code></a></li>
+<li><a href="SECURITY.RDP.USERS.html"><code>SECURITY.RDP.USERS</code></a></li>
+<li><a href="SECURITY.SCAN.CLEAN.html"><code>SECURITY.SCAN.CLEAN</code></a></li>
+<li><a href="SECURITY.SCAN.TIMEOUT.html"><code>SECURITY.SCAN.TIMEOUT</code></a></li>
+<li><a href="SECURITY.SECUREBOOT.OFF.html"><code>SECURITY.SECUREBOOT.OFF</code></a></li>
+<li><a href="SECURITY.SECUREBOOT.ON.html"><code>SECURITY.SECUREBOOT.ON</code></a></li>
+<li><a href="SECURITY.SERVICE.UNQUOTED_PATH.html"><code>SECURITY.SERVICE.UNQUOTED_PATH</code></a></li>
+<li><a href="SECURITY.SERVICE.UNQUOTED_PATH_FIXED.html"><code>SECURITY.SERVICE.UNQUOTED_PATH_FIXED</code></a></li>
+<li><a href="SECURITY.SMB.SIGNING_OFF.html"><code>SECURITY.SMB.SIGNING_OFF</code></a></li>
+<li><a href="SECURITY.SMB.SIGNING_ON.html"><code>SECURITY.SMB.SIGNING_ON</code></a></li>
+<li><a href="SECURITY.SMB1.DISABLED.html"><code>SECURITY.SMB1.DISABLED</code></a></li>
+<li><a href="SECURITY.SMB1.ENABLED.html"><code>SECURITY.SMB1.ENABLED</code></a></li>
+<li><a href="SECURITY.THREATS.FOUND.html"><code>SECURITY.THREATS.FOUND</code></a></li>
+<li><a href="SECURITY.THREATS.NONE.html"><code>SECURITY.THREATS.NONE</code></a></li>
+<li><a href="SECURITY.TPM.ABSENT.html"><code>SECURITY.TPM.ABSENT</code></a></li>
+<li><a href="SECURITY.TPM.NOT_READY.html"><code>SECURITY.TPM.NOT_READY</code></a></li>
+<li><a href="SECURITY.TPM.OK.html"><code>SECURITY.TPM.OK</code></a></li>
+<li><a href="SECURITY.UAC.OFF.html"><code>SECURITY.UAC.OFF</code></a></li>
+<li><a href="SECURITY.UAC.ON.html"><code>SECURITY.UAC.ON</code></a></li>
+<li><a href="SIGNATURE.SECURITY.BLIND_ENDPOINT.html"><code>SIGNATURE.SECURITY.BLIND_ENDPOINT</code></a></li>
+<li><a href="SIGNATURE.SECURITY.EXPOSED_ENDPOINT.html"><code>SIGNATURE.SECURITY.EXPOSED_ENDPOINT</code></a></li>
+<li><a href="SIGNATURE.SECURITY.UNPATCHABLE.html"><code>SIGNATURE.SECURITY.UNPATCHABLE</code></a></li>
+</ul>
+<h2>Services (8)</h2><ul class="ids">
+<li><a href="SERVICES.AUTO.NONE.html"><code>SERVICES.AUTO.NONE</code></a></li>
+<li><a href="SERVICES.AUTO.STOPPED.html"><code>SERVICES.AUTO.STOPPED</code></a></li>
+<li><a href="SERVICES.CRITICAL.DISABLED.html"><code>SERVICES.CRITICAL.DISABLED</code></a></li>
+<li><a href="SERVICES.CRITICAL.ONDEMAND.html"><code>SERVICES.CRITICAL.ONDEMAND</code></a></li>
+<li><a href="SERVICES.CRITICAL.RUNNING.html"><code>SERVICES.CRITICAL.RUNNING</code></a></li>
+<li><a href="SERVICES.CRITICAL.STOPPED.html"><code>SERVICES.CRITICAL.STOPPED</code></a></li>
+<li><a href="SERVICES.RESTART.DONE.html"><code>SERVICES.RESTART.DONE</code></a></li>
+<li><a href="SERVICES.RESTART.FAILED.html"><code>SERVICES.RESTART.FAILED</code></a></li>
+</ul>
+<h2>Storage (19)</h2><ul class="ids">
+<li><a href="STORAGE.CLEANUP.AVAILABLE.html"><code>STORAGE.CLEANUP.AVAILABLE</code></a></li>
+<li><a href="STORAGE.CLEANUP.DONE.html"><code>STORAGE.CLEANUP.DONE</code></a></li>
+<li><a href="STORAGE.CLEANUP.MINIMAL.html"><code>STORAGE.CLEANUP.MINIMAL</code></a></li>
+<li><a href="STORAGE.COMPONENTSTORE.CLEANED.html"><code>STORAGE.COMPONENTSTORE.CLEANED</code></a></li>
+<li><a href="STORAGE.COMPONENTSTORE.CLEANUP_NEEDED.html"><code>STORAGE.COMPONENTSTORE.CLEANUP_NEEDED</code></a></li>
+<li><a href="STORAGE.COMPONENTSTORE.OK.html"><code>STORAGE.COMPONENTSTORE.OK</code></a></li>
+<li><a href="STORAGE.COMPONENTSTORE.UNKNOWN.html"><code>STORAGE.COMPONENTSTORE.UNKNOWN</code></a></li>
+<li><a href="STORAGE.DUPLICATES.CAPPED.html"><code>STORAGE.DUPLICATES.CAPPED</code></a></li>
+<li><a href="STORAGE.DUPLICATES.FOUND.html"><code>STORAGE.DUPLICATES.FOUND</code></a></li>
+<li><a href="STORAGE.DUPLICATES.MINIMAL.html"><code>STORAGE.DUPLICATES.MINIMAL</code></a></li>
+<li><a href="STORAGE.DUPLICATES.NONE.html"><code>STORAGE.DUPLICATES.NONE</code></a></li>
+<li><a href="STORAGE.DUPLICATES.REMOVED.html"><code>STORAGE.DUPLICATES.REMOVED</code></a></li>
+<li><a href="STORAGE.EMPTYFOLDERS.FOUND.html"><code>STORAGE.EMPTYFOLDERS.FOUND</code></a></li>
+<li><a href="STORAGE.EMPTYFOLDERS.NONE.html"><code>STORAGE.EMPTYFOLDERS.NONE</code></a></li>
+<li><a href="STORAGE.EMPTYFOLDERS.REMOVED.html"><code>STORAGE.EMPTYFOLDERS.REMOVED</code></a></li>
+<li><a href="STORAGE.FRAGMENTATION.HIGH.html"><code>STORAGE.FRAGMENTATION.HIGH</code></a></li>
+<li><a href="STORAGE.FRAGMENTATION.OK.html"><code>STORAGE.FRAGMENTATION.OK</code></a></li>
+<li><a href="STORAGE.OPTIMIZE.SSD.html"><code>STORAGE.OPTIMIZE.SSD</code></a></li>
+<li><a href="STORAGE.SCAN.TRUNCATED.html"><code>STORAGE.SCAN.TRUNCATED</code></a></li>
+</ul>
+<h2>System (40)</h2><ul class="ids">
+<li><a href="GENERIC.CHECK.DISABLED_BY_POLICY.html"><code>GENERIC.CHECK.DISABLED_BY_POLICY</code></a></li>
+<li><a href="GENERIC.CHECK.FAILED.html"><code>GENERIC.CHECK.FAILED</code></a></li>
+<li><a href="GENERIC.CHECK.REQUIRES_ADMIN.html"><code>GENERIC.CHECK.REQUIRES_ADMIN</code></a></li>
+<li><a href="GENERIC.CHECK.SKIPPED_OFFLINE.html"><code>GENERIC.CHECK.SKIPPED_OFFLINE</code></a></li>
+<li><a href="GENERIC.CHECK.SKIPPED_SLOW.html"><code>GENERIC.CHECK.SKIPPED_SLOW</code></a></li>
+<li><a href="GENERIC.CHECK.TIMEOUT.html"><code>GENERIC.CHECK.TIMEOUT</code></a></li>
+<li><a href="GENERIC.CHECK.UNAVAILABLE.html"><code>GENERIC.CHECK.UNAVAILABLE</code></a></li>
+<li><a href="MEMORY.TEST.ERRORS.html"><code>MEMORY.TEST.ERRORS</code></a></li>
+<li><a href="MEMORY.TEST.NEVER_RUN.html"><code>MEMORY.TEST.NEVER_RUN</code></a></li>
+<li><a href="MEMORY.TEST.OK.html"><code>MEMORY.TEST.OK</code></a></li>
+<li><a href="MEMORY.TEST.SCHEDULED.html"><code>MEMORY.TEST.SCHEDULED</code></a></li>
+<li><a href="RESTORE.POINTS.NONE.html"><code>RESTORE.POINTS.NONE</code></a></li>
+<li><a href="RESTORE.POINTS.OK.html"><code>RESTORE.POINTS.OK</code></a></li>
+<li><a href="RESTORE.POINTS.STALE.html"><code>RESTORE.POINTS.STALE</code></a></li>
+<li><a href="RESTORE.SHADOWSTORAGE.INFO.html"><code>RESTORE.SHADOWSTORAGE.INFO</code></a></li>
+<li><a href="SENSORS.SOURCE.ERROR.html"><code>SENSORS.SOURCE.ERROR</code></a></li>
+<li><a href="SENSORS.SOURCE.MISSING.html"><code>SENSORS.SOURCE.MISSING</code></a></li>
+<li><a href="SENSORS.SOURCES.ACTIVE.html"><code>SENSORS.SOURCES.ACTIVE</code></a></li>
+<li><a href="SIGNATURE.HARDWARE.POWER_INSTABILITY.html"><code>SIGNATURE.HARDWARE.POWER_INSTABILITY</code></a></li>
+<li><a href="SIGNATURE.HARDWARE.WHEA_DRIVER.html"><code>SIGNATURE.HARDWARE.WHEA_DRIVER</code></a></li>
+<li><a href="STOREAPPS.BROKEN.html"><code>STOREAPPS.BROKEN</code></a></li>
+<li><a href="STOREAPPS.OK.html"><code>STOREAPPS.OK</code></a></li>
+<li><a href="STOREAPPS.REPAIRED.html"><code>STOREAPPS.REPAIRED</code></a></li>
+<li><a href="STOREAPPS.UNAVAILABLE.html"><code>STOREAPPS.UNAVAILABLE</code></a></li>
+<li><a href="SYSTEM.BIOS.INFO.html"><code>SYSTEM.BIOS.INFO</code></a></li>
+<li><a href="SYSTEM.CPU.INFO.html"><code>SYSTEM.CPU.INFO</code></a></li>
+<li><a href="SYSTEM.MACHINE.INFO.html"><code>SYSTEM.MACHINE.INFO</code></a></li>
+<li><a href="SYSTEM.MEMORY.INFO.html"><code>SYSTEM.MEMORY.INFO</code></a></li>
+<li><a href="SYSTEM.MEMORY.MODULES.html"><code>SYSTEM.MEMORY.MODULES</code></a></li>
+<li><a href="SYSTEM.MEMORY.PRESSURE.html"><code>SYSTEM.MEMORY.PRESSURE</code></a></li>
+<li><a href="SYSTEM.OS.INFO.html"><code>SYSTEM.OS.INFO</code></a></li>
+<li><a href="SYSTEM.REBOOT.NONE.html"><code>SYSTEM.REBOOT.NONE</code></a></li>
+<li><a href="SYSTEM.REBOOT.PENDING.html"><code>SYSTEM.REBOOT.PENDING</code></a></li>
+<li><a href="SYSTEM.UPTIME.LONG.html"><code>SYSTEM.UPTIME.LONG</code></a></li>
+<li><a href="SYSTEM.UPTIME.OK.html"><code>SYSTEM.UPTIME.OK</code></a></li>
+<li><a href="SYSTEM.WMI.INCONSISTENT.html"><code>SYSTEM.WMI.INCONSISTENT</code></a></li>
+<li><a href="SYSTEM.WMI.OK.html"><code>SYSTEM.WMI.OK</code></a></li>
+<li><a href="SYSTEM.WMI.REPAIRED.html"><code>SYSTEM.WMI.REPAIRED</code></a></li>
+<li><a href="TASKS.FAILED.NONE.html"><code>TASKS.FAILED.NONE</code></a></li>
+<li><a href="TASKS.FAILED.SOME.html"><code>TASKS.FAILED.SOME</code></a></li>
+</ul>
+<h2>Updates (18)</h2><ul class="ids">
+<li><a href="UPDATES.AGENT.UNAVAILABLE.html"><code>UPDATES.AGENT.UNAVAILABLE</code></a></li>
+<li><a href="UPDATES.CACHE.OVERSIZED.html"><code>UPDATES.CACHE.OVERSIZED</code></a></li>
+<li><a href="UPDATES.HISTORY.EMPTY.html"><code>UPDATES.HISTORY.EMPTY</code></a></li>
+<li><a href="UPDATES.HISTORY.OK.html"><code>UPDATES.HISTORY.OK</code></a></li>
+<li><a href="UPDATES.HISTORY.STALE.html"><code>UPDATES.HISTORY.STALE</code></a></li>
+<li><a href="UPDATES.SERVICING.BROKEN.html"><code>UPDATES.SERVICING.BROKEN</code></a></li>
+<li><a href="UPDATES.SERVICING.FAILURES.html"><code>UPDATES.SERVICING.FAILURES</code></a></li>
+<li><a href="UPDATES.SERVICING.OK.html"><code>UPDATES.SERVICING.OK</code></a></li>
+<li><a href="UPDATES.SERVICING.RESET_DONE.html"><code>UPDATES.SERVICING.RESET_DONE</code></a></li>
+<li><a href="UPDATES.SERVICING.RESET_PARTIAL.html"><code>UPDATES.SERVICING.RESET_PARTIAL</code></a></li>
+<li><a href="UPDATES.WINDOWS.CRITICAL_PENDING.html"><code>UPDATES.WINDOWS.CRITICAL_PENDING</code></a></li>
+<li><a href="UPDATES.WINDOWS.INSTALL_PARTIAL.html"><code>UPDATES.WINDOWS.INSTALL_PARTIAL</code></a></li>
+<li><a href="UPDATES.WINDOWS.INSTALLED.html"><code>UPDATES.WINDOWS.INSTALLED</code></a></li>
+<li><a href="UPDATES.WINDOWS.PENDING.html"><code>UPDATES.WINDOWS.PENDING</code></a></li>
+<li><a href="UPDATES.WINDOWS.UPTODATE.html"><code>UPDATES.WINDOWS.UPTODATE</code></a></li>
+<li><a href="UPDATES.WINGET.PENDING.html"><code>UPDATES.WINGET.PENDING</code></a></li>
+<li><a href="UPDATES.WINGET.UNAVAILABLE.html"><code>UPDATES.WINGET.UNAVAILABLE</code></a></li>
+<li><a href="UPDATES.WINGET.UPTODATE.html"><code>UPDATES.WINGET.UPTODATE</code></a></li>
+</ul>
+
+<footer>
+Generato da <code>build/New-SchemaSite.ps1</code>.
+Gli identificativi e la loro documentazione sono pubblicati perche' chiunque
+possa scriverci sopra regole, ticket e correlazioni.
+</footer>
+</main></body>
+</html>
