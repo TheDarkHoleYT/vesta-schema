@@ -38,6 +38,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Stato</th><td>Fixed</td></tr>
 <tr><th>Evento Windows</th><td><code>5053</code> nel log <code>VestaMaintenance</code></td></tr>
 <tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+<tr><th>Emesso da</th><td><code>SECURITY.HARDENING</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
 <p>Scritto Enabled=1 nel criterio HypervisorEnforcedCodeIntegrity. Ha effetto al riavvio, che NON viene forzato. Dopo il riavvio controllare che i driver di periferica si carichino ancora: quelli vecchi non firmati correttamente vengono rifiutati, ed è il motivo per cui questa correzione richiede l'adesione esplicita.</p>

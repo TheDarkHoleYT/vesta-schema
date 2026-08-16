@@ -1,6 +1,6 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-15T18:08:02.6111724Z",
+    "generatedAt":  "2026-08-16T06:08:52.6967039Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
@@ -139,7 +139,7 @@
                                                                 "en-US":  "Device not working: {Device}"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "DEVICES.DRIVERS"
                                                                 ],
                                                   "compliance":  [
 
@@ -179,7 +179,7 @@
                                                                 "en-US":  "Device with anomalies: {Device}"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "DEVICES.DRIVERS"
                                                                 ],
                                                   "compliance":  [
 
@@ -439,7 +439,7 @@
                                                                   "en-US":  "Reallocated sectors increasing: from {From} to {To} in {Days} days"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "DISK.FORECAST"
                                                                   ],
                                                     "compliance":  [
 
@@ -719,7 +719,6 @@
                                                                "en-US":  "OUT OF SPACE on {Drive}:"
                                                            },
                                                  "emittedBy":  [
-                                                                   "DISK.FORECAST",
                                                                    "DISK.SPACE"
                                                                ],
                                                  "compliance":  [
@@ -740,7 +739,6 @@
                                                           "en-US":  "Running out of space on {Drive}:"
                                                       },
                                             "emittedBy":  [
-                                                              "DISK.FORECAST",
                                                               "DISK.SPACE"
                                                           ],
                                             "compliance":  [
@@ -761,7 +759,6 @@
                                                          "en-US":  "Free space on {Drive}:"
                                                      },
                                            "emittedBy":  [
-                                                             "DISK.FORECAST",
                                                              "DISK.SPACE"
                                                          ],
                                            "compliance":  [
@@ -822,7 +819,7 @@
                                                            "en-US":  "Disk wear increasing: from {From}% to {To}% in {Days} days"
                                                        },
                                              "emittedBy":  [
-
+                                                               "DISK.FORECAST"
                                                            ],
                                              "compliance":  [
 
@@ -882,7 +879,7 @@
                                                                   "en-US":  "BIOS update available: {Available}"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "DRIVERS.FIRMWARE"
                                                                   ],
                                                     "compliance":  [
 
@@ -982,7 +979,7 @@
                                                                       "en-US":  "Firmware update available: {Title}"
                                                                   },
                                                         "emittedBy":  [
-
+                                                                          "DRIVERS.FIRMWARE"
                                                                       ],
                                                         "compliance":  [
 
@@ -1522,7 +1519,7 @@
                                                                    "en-US":  "Driver updates to review: {Count}"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "DRIVERS.SCAN"
                                                                    ],
                                                      "compliance":  [
 
@@ -1542,7 +1539,7 @@
                                                                   "en-US":  "Driver updates rejected: {Count}"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "DRIVERS.SCAN"
                                                                   ],
                                                     "compliance":  [
 
@@ -1562,7 +1559,7 @@
                                                                  "en-US":  "Drivers to update manually: {Count}"
                                                              },
                                                    "emittedBy":  [
-
+                                                                     "DRIVERS.SCAN"
                                                                  ],
                                                    "compliance":  [
 
@@ -1582,7 +1579,7 @@
                                                                    "en-US":  "Optional driver updates: {Count}"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "DRIVERS.SCAN"
                                                                    ],
                                                      "compliance":  [
 
@@ -2362,7 +2359,7 @@
                                                            "en-US":  "Licence expired {Days} days ago"
                                                        },
                                              "emittedBy":  [
-
+                                                               "RUN"
                                                            ],
                                              "compliance":  [
 
@@ -2382,7 +2379,7 @@
                                                             "en-US":  "Licence expires in {Days} days"
                                                         },
                                               "emittedBy":  [
-
+                                                                "RUN"
                                                             ],
                                               "compliance":  [
 
@@ -2402,7 +2399,7 @@
                                                          "en-US":  "Licence expired: grace period running"
                                                      },
                                            "emittedBy":  [
-
+                                                             "RUN"
                                                          ],
                                            "compliance":  [
 
@@ -2422,7 +2419,7 @@
                                                            "en-US":  "Licence is not valid"
                                                        },
                                              "emittedBy":  [
-
+                                                               "RUN"
                                                            ],
                                              "compliance":  [
 
@@ -2922,7 +2919,7 @@
                                                                 "en-US":  "High CPU load"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "PERFORMANCE.RESOURCES"
                                                                 ],
                                                   "compliance":  [
 
@@ -2942,7 +2939,7 @@
                                                               "en-US":  "CPU load"
                                                           },
                                                 "emittedBy":  [
-
+                                                                  "PERFORMANCE.RESOURCES"
                                                               ],
                                                 "compliance":  [
 
@@ -2962,7 +2959,7 @@
                                                                      "en-US":  "Page file heavily used"
                                                                  },
                                                        "emittedBy":  [
-
+                                                                         "PERFORMANCE.RESOURCES"
                                                                      ],
                                                        "compliance":  [
 
@@ -2982,7 +2979,7 @@
                                                                    "en-US":  "Page file"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "PERFORMANCE.RESOURCES"
                                                                    ],
                                                      "compliance":  [
 
@@ -3002,7 +2999,7 @@
                                                                       "en-US":  "Power plan"
                                                                   },
                                                         "emittedBy":  [
-
+                                                                          "PERFORMANCE.RESOURCES"
                                                                       ],
                                                         "compliance":  [
 
@@ -3022,7 +3019,7 @@
                                                                        "en-US":  "Power saver plan on a desktop computer"
                                                                    },
                                                          "emittedBy":  [
-
+                                                                           "PERFORMANCE.RESOURCES"
                                                                        ],
                                                          "compliance":  [
 
@@ -3262,7 +3259,7 @@
                                                              "en-US":  "Restore points available"
                                                          },
                                                "emittedBy":  [
-
+                                                                 "SYSTEM.RESTOREPOINT"
                                                              ],
                                                "compliance":  [
                                                                   "DATA.RECOVERY"
@@ -3282,7 +3279,7 @@
                                                                 "en-US":  "Restore points not recent"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "SYSTEM.RESTOREPOINT"
                                                                 ],
                                                   "compliance":  [
 
@@ -3322,7 +3319,7 @@
                                                          "en-US":  "Run stopped on request after {ElapsedMinutes} minutes"
                                                      },
                                            "emittedBy":  [
-
+                                                             "RUN"
                                                          ],
                                            "compliance":  [
 
@@ -3362,7 +3359,7 @@
                                                                       "en-US":  "Time budget for fixes exhausted: {Pending} not started"
                                                                   },
                                                         "emittedBy":  [
-
+                                                                          "RUN"
                                                                       ],
                                                         "compliance":  [
 
@@ -3382,7 +3379,7 @@
                                                          "en-US":  "Maintenance already running on this computer"
                                                      },
                                            "emittedBy":  [
-
+                                                             "RUN"
                                                          ],
                                            "compliance":  [
 
@@ -3402,7 +3399,7 @@
                                                                "en-US":  "Diagnostics only: no changes applied to the system"
                                                            },
                                                  "emittedBy":  [
-
+                                                                   "RUN"
                                                                ],
                                                  "compliance":  [
 
@@ -3422,7 +3419,7 @@
                                                                 "en-US":  "Run postponed: computer is on battery power"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "RUN"
                                                                 ],
                                                   "compliance":  [
 
@@ -3442,7 +3439,7 @@
                                                                   "en-US":  "Session is not elevated: limited checks"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "RUN"
                                                                   ],
                                                     "compliance":  [
 
@@ -3462,7 +3459,7 @@
                                                              "en-US":  "Local queue too large: {Removed} oldest runs deleted"
                                                          },
                                                "emittedBy":  [
-
+                                                                 "RUN"
                                                              ],
                                                "compliance":  [
 
@@ -3482,7 +3479,7 @@
                                                                     "en-US":  "Restore point was not created"
                                                                 },
                                                       "emittedBy":  [
-
+                                                                        "BACKUP"
                                                                     ],
                                                       "compliance":  [
 
@@ -3502,7 +3499,7 @@
                                                                 "en-US":  "VestaMaintenance {Available} is available, {Current} is installed"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "RUN"
                                                                 ],
                                                   "compliance":  [
 
@@ -3522,7 +3519,7 @@
                                                               "en-US":  "Outside the maintenance window"
                                                           },
                                                 "emittedBy":  [
-
+                                                                  "RUN"
                                                               ],
                                                 "compliance":  [
 
@@ -3542,7 +3539,7 @@
                                                                                   "en-US":  "Built-in Administrator account is enabled"
                                                                               },
                                                                     "emittedBy":  [
-
+                                                                                      "SECURITY.ACCOUNTS"
                                                                                   ],
                                                                     "compliance":  [
                                                                                        "ACCOUNT.PRIVILEGE"
@@ -3562,7 +3559,7 @@
                                                                           "en-US":  "Guest account is enabled"
                                                                       },
                                                             "emittedBy":  [
-
+                                                                              "SECURITY.ACCOUNTS"
                                                                           ],
                                                             "compliance":  [
                                                                                "ACCOUNT.PRIVILEGE"
@@ -3982,7 +3979,7 @@
                                                                   "en-US":  "Volume {Volume} not encrypted"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SECURITY.POSTURE"
                                                                   ],
                                                     "compliance":  [
                                                                        "DISK.ENCRYPTION"
@@ -4002,7 +3999,7 @@
                                                                  "en-US":  "Volume {Volume} encrypted with BitLocker"
                                                              },
                                                    "emittedBy":  [
-
+                                                                     "SECURITY.POSTURE"
                                                                  ],
                                                    "compliance":  [
                                                                       "DISK.ENCRYPTION"
@@ -4262,7 +4259,7 @@
                                                                              "en-US":  "Credential Guard enabled: reboot required"
                                                                          },
                                                                "emittedBy":  [
-
+                                                                                 "SECURITY.HARDENING"
                                                                              ],
                                                                "compliance":  [
 
@@ -4682,7 +4679,7 @@
                                                                  "en-US":  "FIREWALL DISABLED on profile {Profile}"
                                                              },
                                                    "emittedBy":  [
-
+                                                                     "SECURITY.POSTURE"
                                                                  ],
                                                    "compliance":  [
                                                                       "NETWORK.FILTERING"
@@ -4702,7 +4699,7 @@
                                                                 "en-US":  "Firewall profile {Profile} enabled"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "SECURITY.POSTURE"
                                                                 ],
                                                   "compliance":  [
                                                                      "NETWORK.FILTERING"
@@ -4782,7 +4779,7 @@
                                                                         "en-US":  "HVCI code integrity enabled: reboot required"
                                                                     },
                                                           "emittedBy":  [
-
+                                                                            "SECURITY.HARDENING"
                                                                         ],
                                                           "compliance":  [
 
@@ -5622,7 +5619,7 @@
                                                                    "en-US":  "Secure Boot disabled"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "SECURITY.POSTURE"
                                                                    ],
                                                      "compliance":  [
                                                                         "BOOT.INTEGRITY"
@@ -5642,7 +5639,7 @@
                                                                   "en-US":  "Secure Boot enabled"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SECURITY.POSTURE"
                                                                   ],
                                                     "compliance":  [
                                                                        "BOOT.INTEGRITY"
@@ -5882,7 +5879,7 @@
                                                             "en-US":  "USER ACCOUNT CONTROL (UAC) DISABLED"
                                                         },
                                               "emittedBy":  [
-
+                                                                "SECURITY.POSTURE"
                                                             ],
                                               "compliance":  [
                                                                  "BOOT.INTEGRITY"
@@ -5902,7 +5899,7 @@
                                                            "en-US":  "User Account Control (UAC) enabled"
                                                        },
                                              "emittedBy":  [
-
+                                                               "SECURITY.POSTURE"
                                                            ],
                                              "compliance":  [
                                                                 "BOOT.INTEGRITY"
@@ -5922,7 +5919,7 @@
                                                                 "en-US":  "Measurement source {Name} did not respond"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "SENSORS.SOURCES"
                                                                 ],
                                                   "compliance":  [
 
@@ -5942,7 +5939,7 @@
                                                                   "en-US":  "Measurement source {Name} is enabled but not available"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SENSORS.SOURCES"
                                                                   ],
                                                     "compliance":  [
 
@@ -5982,7 +5979,7 @@
                                                                   "en-US":  "{Metric} of {Subject} steadily above threshold: {HoursPerDay} hours a day"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SENSORS.SUSTAINED"
                                                                   ],
                                                     "compliance":  [
 
@@ -6022,7 +6019,7 @@
                                                                   "en-US":  "{Metric} of {Subject} above threshold {HoursPerDay} hours a day"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SENSORS.SUSTAINED"
                                                                   ],
                                                     "compliance":  [
 
@@ -6202,7 +6199,7 @@
                                                                   "en-US":  "DATA LOSS ANNOUNCED: failing disk and broken backup"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "SYSTEM.SIGNATURES"
                                                                   ],
                                                     "compliance":  [
 
@@ -6222,7 +6219,7 @@
                                                                            "en-US":  "DISK FAILING: several matching indicators"
                                                                        },
                                                              "emittedBy":  [
-
+                                                                               "SYSTEM.SIGNATURES"
                                                                            ],
                                                              "compliance":  [
 
@@ -6242,7 +6239,7 @@
                                                                                 "en-US":  "Power or hardware instability"
                                                                             },
                                                                   "emittedBy":  [
-
+                                                                                    "SYSTEM.SIGNATURES"
                                                                                 ],
                                                                   "compliance":  [
 
@@ -6262,7 +6259,7 @@
                                                                           "en-US":  "Hardware errors linked to a faulty driver"
                                                                       },
                                                             "emittedBy":  [
-
+                                                                              "SYSTEM.SIGNATURES"
                                                                           ],
                                                             "compliance":  [
 
@@ -6282,7 +6279,7 @@
                                                                             "en-US":  "Disk saturation under way"
                                                                         },
                                                               "emittedBy":  [
-
+                                                                                "SYSTEM.SIGNATURES"
                                                                             ],
                                                               "compliance":  [
 
@@ -6302,7 +6299,7 @@
                                                                              "en-US":  "Antivirus made blind"
                                                                          },
                                                                "emittedBy":  [
-
+                                                                                 "SYSTEM.SIGNATURES"
                                                                              ],
                                                                "compliance":  [
 
@@ -6322,7 +6319,7 @@
                                                                                "en-US":  "Exposed machine with weak credentials"
                                                                            },
                                                                  "emittedBy":  [
-
+                                                                                   "SYSTEM.SIGNATURES"
                                                                                ],
                                                                  "compliance":  [
 
@@ -6342,7 +6339,7 @@
                                                                           "en-US":  "Unsupported system, and exposed"
                                                                       },
                                                             "emittedBy":  [
-
+                                                                              "SYSTEM.SIGNATURES"
                                                                           ],
                                                             "compliance":  [
 
@@ -6362,7 +6359,7 @@
                                                                      "en-US":  "Thermal problem involving the disk"
                                                                  },
                                                        "emittedBy":  [
-
+                                                                         "SYSTEM.SIGNATURES"
                                                                      ],
                                                        "compliance":  [
 
@@ -6442,7 +6439,7 @@
                                                                 "en-US":  "Fast Startup disabled"
                                                             },
                                                   "emittedBy":  [
-
+                                                                    "PERFORMANCE.STARTUP"
                                                                 ],
                                                   "compliance":  [
 
@@ -6462,7 +6459,7 @@
                                                                "en-US":  "Fast Startup enabled"
                                                            },
                                                  "emittedBy":  [
-
+                                                                   "PERFORMANCE.STARTUP"
                                                                ],
                                                  "compliance":  [
 
@@ -6562,7 +6559,7 @@
                                                                      "en-US":  "Space reclaimable by cleanup"
                                                                  },
                                                        "emittedBy":  [
-
+                                                                         "STORAGE.CLEANUP"
                                                                      ],
                                                        "compliance":  [
 
@@ -6582,7 +6579,7 @@
                                                                 "en-US":  "Cleanup completed"
                                                             },
                                                   "emittedBy":  [
-                                                                    "UserTemp"
+                                                                    "STORAGE.CLEANUP"
                                                                 ],
                                                   "compliance":  [
 
@@ -6602,7 +6599,7 @@
                                                                    "en-US":  "Little space to reclaim"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "STORAGE.CLEANUP"
                                                                    ],
                                                      "compliance":  [
 
@@ -6722,7 +6719,7 @@
                                                                     "en-US":  "Duplicate files"
                                                                 },
                                                       "emittedBy":  [
-
+                                                                        "STORAGE.DUPLICATES"
                                                                     ],
                                                       "compliance":  [
 
@@ -6742,7 +6739,7 @@
                                                                       "en-US":  "Few duplicate files"
                                                                   },
                                                         "emittedBy":  [
-
+                                                                          "STORAGE.DUPLICATES"
                                                                       ],
                                                         "compliance":  [
 
@@ -6862,7 +6859,7 @@
                                                                       "en-US":  "High fragmentation on {Drive}:"
                                                                   },
                                                         "emittedBy":  [
-
+                                                                          "STORAGE.OPTIMIZE"
                                                                       ],
                                                         "compliance":  [
 
@@ -6882,7 +6879,7 @@
                                                                     "en-US":  "Low fragmentation on {Drive}:"
                                                                 },
                                                       "emittedBy":  [
-
+                                                                        "STORAGE.OPTIMIZE"
                                                                     ],
                                                       "compliance":  [
 
@@ -7103,7 +7100,7 @@
                                                                           "en-US":  "Windows image state could not be determined"
                                                                       },
                                                             "emittedBy":  [
-
+                                                                              "SYSTEM.INTEGRITY"
                                                                           ],
                                                             "compliance":  [
 
@@ -7583,7 +7580,7 @@
                                                               "en-US":  "Last installed update"
                                                           },
                                                 "emittedBy":  [
-
+                                                                  "UPDATES.STATUS"
                                                               ],
                                                 "compliance":  [
 
@@ -7603,7 +7600,7 @@
                                                                  "en-US":  "No update installed for too long"
                                                              },
                                                    "emittedBy":  [
-
+                                                                     "UPDATES.STATUS"
                                                                  ],
                                                    "compliance":  [
                                                                       "PATCH.MANAGEMENT"
@@ -7723,7 +7720,7 @@
                                                                             "en-US":  "CRITICAL UPDATES pending"
                                                                         },
                                                               "emittedBy":  [
-
+                                                                                "UPDATES.STATUS"
                                                                             ],
                                                               "compliance":  [
                                                                                  "PATCH.MANAGEMENT"
@@ -7743,7 +7740,7 @@
                                                                            "en-US":  "Update installation only partial"
                                                                        },
                                                              "emittedBy":  [
-
+                                                                               "UPDATES.STATUS"
                                                                            ],
                                                              "compliance":  [
 
@@ -7763,7 +7760,7 @@
                                                                      "en-US":  "Windows updates installed"
                                                                  },
                                                        "emittedBy":  [
-
+                                                                         "UPDATES.STATUS"
                                                                      ],
                                                        "compliance":  [
 
@@ -7783,7 +7780,7 @@
                                                                    "en-US":  "Windows updates pending"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "UPDATES.STATUS"
                                                                    ],
                                                      "compliance":  [
 
@@ -7823,7 +7820,7 @@
                                                                   "en-US":  "Third-party software can be updated"
                                                               },
                                                     "emittedBy":  [
-
+                                                                      "UPDATES.STATUS"
                                                                   ],
                                                     "compliance":  [
 
@@ -7863,7 +7860,7 @@
                                                                    "en-US":  "Third-party software up to date"
                                                                },
                                                      "emittedBy":  [
-
+                                                                       "UPDATES.STATUS"
                                                                    ],
                                                      "compliance":  [
 
