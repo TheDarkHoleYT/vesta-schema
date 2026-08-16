@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-16T07:07:56.9810535Z",
+    "generatedAt":  "2026-08-16T16:02:02.3103236Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  399,
+    "count":  421,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -1926,6 +1926,26 @@
                                                                          ],
                                                           "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/GENERIC.CHECK.REQUIRES_ADMIN.html"
                                                       },
+                     "GENERIC.CHECK.SKIPPED_DEEP":  {
+                                                        "id":  "GENERIC.CHECK.SKIPPED_DEEP",
+                                                        "eventId":  2043,
+                                                        "area":  "System",
+                                                        "severity":  "Info",
+                                                        "status":  "Skip",
+                                                        "remediable":  false,
+                                                        "riskLevel":  "Manual",
+                                                        "title":  {
+                                                                      "it-IT":  "Scansione profonda rimandata al passaggio settimanale",
+                                                                      "en-US":  "Deep scan deferred to the weekly pass"
+                                                                  },
+                                                        "emittedBy":  [
+
+                                                                      ],
+                                                        "compliance":  [
+
+                                                                       ],
+                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/GENERIC.CHECK.SKIPPED_DEEP.html"
+                                                    },
                      "GENERIC.CHECK.SKIPPED_OFFLINE":  {
                                                            "id":  "GENERIC.CHECK.SKIPPED_OFFLINE",
                                                            "eventId":  2005,
@@ -2006,6 +2026,246 @@
                                                                       ],
                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/GENERIC.CHECK.UNAVAILABLE.html"
                                                    },
+                     "HARDWARE.CABLE.BASELINE":  {
+                                                     "id":  "HARDWARE.CABLE.BASELINE",
+                                                     "eventId":  17007,
+                                                     "area":  "Hardware",
+                                                     "severity":  "Info",
+                                                     "status":  "Info",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "Errori di collegamento: primo rilevamento, niente con cui confrontarlo",
+                                                                   "en-US":  "Link errors: first reading, nothing to compare it with"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "HARDWARE.CABLE"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.CABLE.BASELINE.html"
+                                                 },
+                     "HARDWARE.CABLE.ERRORS":  {
+                                                   "id":  "HARDWARE.CABLE.ERRORS",
+                                                   "eventId":  17008,
+                                                   "area":  "Hardware",
+                                                   "severity":  "High",
+                                                   "status":  "Warn",
+                                                   "remediable":  false,
+                                                   "riskLevel":  "Manual",
+                                                   "title":  {
+                                                                 "it-IT":  "Il collegamento sta accumulando errori nuovi",
+                                                                 "en-US":  "The link is accumulating new errors"
+                                                             },
+                                                   "emittedBy":  [
+                                                                     "HARDWARE.CABLE"
+                                                                 ],
+                                                   "compliance":  [
+
+                                                                  ],
+                                                   "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.CABLE.ERRORS.html"
+                                               },
+                     "HARDWARE.CABLE.OK":  {
+                                               "id":  "HARDWARE.CABLE.OK",
+                                               "eventId":  17006,
+                                               "area":  "Hardware",
+                                               "severity":  "Info",
+                                               "status":  "Ok",
+                                               "remediable":  false,
+                                               "riskLevel":  "Manual",
+                                               "title":  {
+                                                             "it-IT":  "Errori di collegamento",
+                                                             "en-US":  "Link errors"
+                                                         },
+                                               "emittedBy":  [
+                                                                 "HARDWARE.CABLE"
+                                                             ],
+                                               "compliance":  [
+
+                                                              ],
+                                               "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.CABLE.OK.html"
+                                           },
+                     "HARDWARE.GPU.HOT":  {
+                                              "id":  "HARDWARE.GPU.HOT",
+                                              "eventId":  17003,
+                                              "area":  "Hardware",
+                                              "severity":  "Medium",
+                                              "status":  "Warn",
+                                              "remediable":  false,
+                                              "riskLevel":  "Manual",
+                                              "title":  {
+                                                            "it-IT":  "La scheda video lavora troppo calda",
+                                                            "en-US":  "Graphics card running too hot"
+                                                        },
+                                              "emittedBy":  [
+                                                                "HARDWARE.GPU"
+                                                            ],
+                                              "compliance":  [
+
+                                                             ],
+                                              "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.HOT.html"
+                                          },
+                     "HARDWARE.GPU.LINK_DEGRADED":  {
+                                                        "id":  "HARDWARE.GPU.LINK_DEGRADED",
+                                                        "eventId":  17005,
+                                                        "area":  "Hardware",
+                                                        "severity":  "High",
+                                                        "status":  "Warn",
+                                                        "remediable":  false,
+                                                        "riskLevel":  "Manual",
+                                                        "title":  {
+                                                                      "it-IT":  "Il collegamento PCIe della scheda video non sale al massimo",
+                                                                      "en-US":  "Graphics card PCIe link is not reaching its maximum"
+                                                                  },
+                                                        "emittedBy":  [
+                                                                          "HARDWARE.GPU"
+                                                                      ],
+                                                        "compliance":  [
+
+                                                                       ],
+                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.LINK_DEGRADED.html"
+                                                    },
+                     "HARDWARE.GPU.NOT_MEASURED":  {
+                                                       "id":  "HARDWARE.GPU.NOT_MEASURED",
+                                                       "eventId":  17002,
+                                                       "area":  "Hardware",
+                                                       "severity":  "Info",
+                                                       "status":  "Info",
+                                                       "remediable":  false,
+                                                       "riskLevel":  "Manual",
+                                                       "title":  {
+                                                                     "it-IT":  "Scheda video presente ma non misurata",
+                                                                     "en-US":  "Graphics card present but not measured"
+                                                                 },
+                                                       "emittedBy":  [
+                                                                         "HARDWARE.GPU"
+                                                                     ],
+                                                       "compliance":  [
+
+                                                                      ],
+                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.NOT_MEASURED.html"
+                                                   },
+                     "HARDWARE.GPU.OK":  {
+                                             "id":  "HARDWARE.GPU.OK",
+                                             "eventId":  17000,
+                                             "area":  "Hardware",
+                                             "severity":  "Info",
+                                             "status":  "Ok",
+                                             "remediable":  false,
+                                             "riskLevel":  "Manual",
+                                             "title":  {
+                                                           "it-IT":  "Scheda video",
+                                                           "en-US":  "Graphics card"
+                                                       },
+                                             "emittedBy":  [
+                                                               "HARDWARE.GPU"
+                                                           ],
+                                             "compliance":  [
+
+                                                            ],
+                                             "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.OK.html"
+                                         },
+                     "HARDWARE.GPU.THROTTLED":  {
+                                                    "id":  "HARDWARE.GPU.THROTTLED",
+                                                    "eventId":  17004,
+                                                    "area":  "Hardware",
+                                                    "severity":  "High",
+                                                    "status":  "Warn",
+                                                    "remediable":  false,
+                                                    "riskLevel":  "Manual",
+                                                    "title":  {
+                                                                  "it-IT":  "La scheda video si sta rallentando da sola",
+                                                                  "en-US":  "Graphics card is slowing itself down"
+                                                              },
+                                                    "emittedBy":  [
+                                                                      "HARDWARE.GPU"
+                                                                  ],
+                                                    "compliance":  [
+
+                                                                   ],
+                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.THROTTLED.html"
+                                                },
+                     "HARDWARE.GPU.UNKNOWN":  {
+                                                  "id":  "HARDWARE.GPU.UNKNOWN",
+                                                  "eventId":  17001,
+                                                  "area":  "Hardware",
+                                                  "severity":  "Info",
+                                                  "status":  "Skip",
+                                                  "remediable":  false,
+                                                  "riskLevel":  "Manual",
+                                                  "title":  {
+                                                                "it-IT":  "Scheda video non valutabile: era a riposo",
+                                                                "en-US":  "Graphics card could not be judged: it was idle"
+                                                            },
+                                                  "emittedBy":  [
+                                                                    "HARDWARE.GPU"
+                                                                ],
+                                                  "compliance":  [
+
+                                                                 ],
+                                                  "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.GPU.UNKNOWN.html"
+                                              },
+                     "HARDWARE.PSU.NOT_POWER":  {
+                                                    "id":  "HARDWARE.PSU.NOT_POWER",
+                                                    "eventId":  17010,
+                                                    "area":  "Hardware",
+                                                    "severity":  "Info",
+                                                    "status":  "Info",
+                                                    "remediable":  false,
+                                                    "riskLevel":  "Manual",
+                                                    "title":  {
+                                                                  "it-IT":  "Spegnimenti bruschi, ma nessuno per mancanza di corrente",
+                                                                  "en-US":  "Unclean shutdowns, but none from loss of power"
+                                                              },
+                                                    "emittedBy":  [
+                                                                      "HARDWARE.PSU"
+                                                                  ],
+                                                    "compliance":  [
+
+                                                                   ],
+                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.PSU.NOT_POWER.html"
+                                                },
+                     "HARDWARE.PSU.OK":  {
+                                             "id":  "HARDWARE.PSU.OK",
+                                             "eventId":  17009,
+                                             "area":  "Hardware",
+                                             "severity":  "Info",
+                                             "status":  "Ok",
+                                             "remediable":  false,
+                                             "riskLevel":  "Manual",
+                                             "title":  {
+                                                           "it-IT":  "Alimentazione",
+                                                           "en-US":  "Power"
+                                                       },
+                                             "emittedBy":  [
+                                                               "HARDWARE.PSU"
+                                                           ],
+                                             "compliance":  [
+
+                                                            ],
+                                             "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.PSU.OK.html"
+                                         },
+                     "HARDWARE.PSU.POWER_LOSS":  {
+                                                     "id":  "HARDWARE.PSU.POWER_LOSS",
+                                                     "eventId":  17011,
+                                                     "area":  "Hardware",
+                                                     "severity":  "High",
+                                                     "status":  "Warn",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "Al computer è mancata la corrente più volte",
+                                                                   "en-US":  "The machine lost power several times"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "HARDWARE.PSU"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.PSU.POWER_LOSS.html"
+                                                 },
                      "INVENTORY.GPU":  {
                                            "id":  "INVENTORY.GPU",
                                            "eventId":  11002,
@@ -2506,6 +2766,46 @@
                                                                   ],
                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/MEMORY.TEST.SCHEDULED.html"
                                                },
+                     "NETWORK.ADAPTER.ERRORS":  {
+                                                    "id":  "NETWORK.ADAPTER.ERRORS",
+                                                    "eventId":  6024,
+                                                    "area":  "Network",
+                                                    "severity":  "Medium",
+                                                    "status":  "Warn",
+                                                    "remediable":  false,
+                                                    "riskLevel":  "Manual",
+                                                    "title":  {
+                                                                  "it-IT":  "La scheda di rete perde pacchetti",
+                                                                  "en-US":  "Network adapter is losing packets"
+                                                              },
+                                                    "emittedBy":  [
+                                                                      "NETWORK.ADAPTER"
+                                                                  ],
+                                                    "compliance":  [
+
+                                                                   ],
+                                                    "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.ERRORS.html"
+                                                },
+                     "NETWORK.ADAPTER.HALF_DUPLEX":  {
+                                                         "id":  "NETWORK.ADAPTER.HALF_DUPLEX",
+                                                         "eventId":  6023,
+                                                         "area":  "Network",
+                                                         "severity":  "Medium",
+                                                         "status":  "Warn",
+                                                         "remediable":  false,
+                                                         "riskLevel":  "Manual",
+                                                         "title":  {
+                                                                       "it-IT":  "La scheda di rete lavora in half duplex",
+                                                                       "en-US":  "Network adapter is running half duplex"
+                                                                   },
+                                                         "emittedBy":  [
+                                                                           "NETWORK.ADAPTER"
+                                                                       ],
+                                                         "compliance":  [
+
+                                                                        ],
+                                                         "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.HALF_DUPLEX.html"
+                                                     },
                      "NETWORK.ADAPTER.NONE":  {
                                                   "id":  "NETWORK.ADAPTER.NONE",
                                                   "eventId":  6001,
@@ -2526,6 +2826,66 @@
                                                                  ],
                                                   "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.NONE.html"
                                               },
+                     "NETWORK.ADAPTER.OK":  {
+                                                "id":  "NETWORK.ADAPTER.OK",
+                                                "eventId":  6020,
+                                                "area":  "Network",
+                                                "severity":  "Info",
+                                                "status":  "Ok",
+                                                "remediable":  false,
+                                                "riskLevel":  "Manual",
+                                                "title":  {
+                                                              "it-IT":  "Collegamento di rete",
+                                                              "en-US":  "Network link"
+                                                          },
+                                                "emittedBy":  [
+                                                                  "NETWORK.ADAPTER"
+                                                              ],
+                                                "compliance":  [
+
+                                                               ],
+                                                "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.OK.html"
+                                            },
+                     "NETWORK.ADAPTER.SPEED_FORCED":  {
+                                                          "id":  "NETWORK.ADAPTER.SPEED_FORCED",
+                                                          "eventId":  6021,
+                                                          "area":  "Network",
+                                                          "severity":  "Info",
+                                                          "status":  "Info",
+                                                          "remediable":  false,
+                                                          "riskLevel":  "Manual",
+                                                          "title":  {
+                                                                        "it-IT":  "La velocità della scheda di rete è fissata a mano",
+                                                                        "en-US":  "Network adapter speed is pinned by hand"
+                                                                    },
+                                                          "emittedBy":  [
+                                                                            "NETWORK.ADAPTER"
+                                                                        ],
+                                                          "compliance":  [
+
+                                                                         ],
+                                                          "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.SPEED_FORCED.html"
+                                                      },
+                     "NETWORK.ADAPTER.SPEED_LOW":  {
+                                                       "id":  "NETWORK.ADAPTER.SPEED_LOW",
+                                                       "eventId":  6022,
+                                                       "area":  "Network",
+                                                       "severity":  "Medium",
+                                                       "status":  "Warn",
+                                                       "remediable":  false,
+                                                       "riskLevel":  "Manual",
+                                                       "title":  {
+                                                                     "it-IT":  "La scheda di rete ha negoziato una velocità bassa",
+                                                                     "en-US":  "Network adapter negotiated a low speed"
+                                                                 },
+                                                       "emittedBy":  [
+                                                                         "NETWORK.ADAPTER"
+                                                                     ],
+                                                       "compliance":  [
+
+                                                                      ],
+                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/NETWORK.ADAPTER.SPEED_LOW.html"
+                                                   },
                      "NETWORK.ADAPTER.UP":  {
                                                 "id":  "NETWORK.ADAPTER.UP",
                                                 "eventId":  6000,
@@ -6046,6 +6406,86 @@
                                                                  ],
                                                   "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCE.ERROR.html"
                                               },
+                     "SENSORS.SOURCE.HWINFO.NO_SENSORS":  {
+                                                              "id":  "SENSORS.SOURCE.HWINFO.NO_SENSORS",
+                                                              "eventId":  2049,
+                                                              "area":  "System",
+                                                              "severity":  "Low",
+                                                              "status":  "Warn",
+                                                              "remediable":  false,
+                                                              "riskLevel":  "Manual",
+                                                              "title":  {
+                                                                            "it-IT":  "HWiNFO non pubblica nessun sensore",
+                                                                            "en-US":  "HWiNFO is publishing no sensors"
+                                                                        },
+                                                              "emittedBy":  [
+                                                                                "SENSORS.SOURCES"
+                                                                            ],
+                                                              "compliance":  [
+
+                                                                             ],
+                                                              "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCE.HWINFO.NO_SENSORS.html"
+                                                          },
+                     "SENSORS.SOURCE.HWINFO.NOT_RUNNING":  {
+                                                               "id":  "SENSORS.SOURCE.HWINFO.NOT_RUNNING",
+                                                               "eventId":  2047,
+                                                               "area":  "System",
+                                                               "severity":  "Low",
+                                                               "status":  "Warn",
+                                                               "remediable":  false,
+                                                               "riskLevel":  "Manual",
+                                                               "title":  {
+                                                                             "it-IT":  "HWiNFO installato ma non in esecuzione",
+                                                                             "en-US":  "HWiNFO is installed but not running"
+                                                                         },
+                                                               "emittedBy":  [
+                                                                                 "SENSORS.SOURCES"
+                                                                             ],
+                                                               "compliance":  [
+
+                                                                              ],
+                                                               "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCE.HWINFO.NOT_RUNNING.html"
+                                                           },
+                     "SENSORS.SOURCE.HWINFO.UNMAPPED":  {
+                                                            "id":  "SENSORS.SOURCE.HWINFO.UNMAPPED",
+                                                            "eventId":  2050,
+                                                            "area":  "System",
+                                                            "severity":  "Info",
+                                                            "status":  "Info",
+                                                            "remediable":  false,
+                                                            "riskLevel":  "Manual",
+                                                            "title":  {
+                                                                          "it-IT":  "HWiNFO pubblica {Count} sensori non dichiarati",
+                                                                          "en-US":  "HWiNFO publishes {Count} undeclared sensors"
+                                                                      },
+                                                            "emittedBy":  [
+                                                                              "SENSORS.SOURCES"
+                                                                          ],
+                                                            "compliance":  [
+
+                                                                           ],
+                                                            "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCE.HWINFO.UNMAPPED.html"
+                                                        },
+                     "SENSORS.SOURCE.HWINFO.VSB_OFF":  {
+                                                           "id":  "SENSORS.SOURCE.HWINFO.VSB_OFF",
+                                                           "eventId":  2048,
+                                                           "area":  "System",
+                                                           "severity":  "Low",
+                                                           "status":  "Warn",
+                                                           "remediable":  false,
+                                                           "riskLevel":  "Manual",
+                                                           "title":  {
+                                                                         "it-IT":  "HWiNFO in esecuzione ma il gadget è spento",
+                                                                         "en-US":  "HWiNFO is running but gadget reporting is off"
+                                                                     },
+                                                           "emittedBy":  [
+                                                                             "SENSORS.SOURCES"
+                                                                         ],
+                                                           "compliance":  [
+
+                                                                          ],
+                                                           "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SENSORS.SOURCE.HWINFO.VSB_OFF.html"
+                                                       },
                      "SENSORS.SOURCE.MISSING":  {
                                                     "id":  "SENSORS.SOURCE.MISSING",
                                                     "eventId":  2019,

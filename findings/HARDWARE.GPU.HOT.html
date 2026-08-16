@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contratto e rilevamenti - VestaMaintenance</title>
+<title>HARDWARE.GPU.HOT - VestaMaintenance</title>
 <style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
 @media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
 *{box-sizing:border-box}
@@ -29,36 +29,25 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 .overflow{overflow-x:auto}</style>
 </head>
 <body><main>
-<nav><a href="./index.html">VestaMaintenance</a> / <a href="./findings/index.html">rilevamenti</a></nav>
-<h1>VestaMaintenance</h1>
-<p class="lead">Contratto dei dati e vocabolario dei rilevamenti.</p>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>HARDWARE.GPU.HOT</h1>
+<p class="lead">La scheda video lavora troppo calda</p>
+<h2>Scheda</h2><div class="overflow"><table>
+<tr><th>Area</th><td>Hardware</td></tr>
+<tr><th>Severita</th><td><span class="tag sev-Medium">Medium</span></td></tr>
+<tr><th>Stato</th><td>Warn</td></tr>
+<tr><th>Evento Windows</th><td><code>17003</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+<tr><th>Emesso da</th><td><code>HARDWARE.GPU</code></td></tr>
+</table></div>
+<h2>Che cosa significa</h2>
+<p>{Model}: {Temperature:n0} °C contro una soglia di {TempThreshold:n0}, con la scheda al {Utilization:n0}% di utilizzo e la ventola al {FanPercent:n0}%. Misurato da {Source}.</p>
+<h2>Da dove cominciare</h2>
+<p>Una scheda video moderna lavora volentieri sugli 80 gradi, quindi il problema non è il caldo in sé ma da dove viene. Nell'ordine in cui conviene guardare: le prese d'aria del case ostruite o il flusso invertito, il dissipatore della scheda pieno di polvere fra le alette, i pad termici della memoria seccati - si riconoscono da aloni oleosi sui fianchi del dissipatore - e la pasta termica esaurita, che su una scheda di quattro o cinque anni è la causa più probabile. Controllare anche che la ventola giri: una ventola ferma con la scheda calda è un cuscinetto andato, non un risparmio energetico. Se la scheda sta in verticale su un cavo riser, verificare che non stia aspirando aria già calda dal fondo del case.</p>
+<h2>English</h2>
+<p class="lead">Graphics card running too hot</p>
+<p>{Model}: {Temperature:n0} °C against a {TempThreshold:n0} threshold, with the card at {Utilization:n0}% utilisation and the fan at {FanPercent:n0}%. Measured by {Source}.</p>
 
-<h2>Contratto</h2>
-<p>Ogni esecuzione produce un file JSON. Questo e il suo schema, versione
-<code>1.1</code>:</p>
-<p><a href="schema/run-1.1.json"><code>schema/run-1.1.json</code></a></p>
-<p>La versione si incrementa <strong>solo</strong> per modifiche non
-retrocompatibili: un aggregatore la usa per rifiutare cio che non sa
-interpretare.</p>
-
-<h2>Rilevamenti</h2>
-<p>421 identificativi, uno per ogni condizione che il prodotto sa
-riconoscere. <code>DISK.SMART.PREDICTIVE_FAILURE</code>, non la stringa
-&quot;guasto imminente&quot;.</p>
-<p>Un identificativo pubblicato <strong>non si rinomina e non si riusa mai per
-un altro significato</strong>: e cio che permette di confrontare i dati di oggi
-con quelli dell anno scorso, e di sommare trecento computer in un numero solo.</p>
-<p><a href="findings/index.html">Elenco completo</a> &middot;
-   <a href="findings.json">Indice macchina-leggibile</a></p>
-
-<h2>Perche e pubblico</h2>
-<p>Perche chiunque possa scriverci sopra: una regola di correlazione in un SIEM,
-un ticket con l identificativo nel titolo, un monitoraggio in un RMM, un
-controllo in un altro strumento. Sono le stesse proprieta che rendono
-utilizzabili CVE e i CIS Controls.</p>
-<p>Documentazione e indice sono pubblicati con licenza
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Il
-prodotto e il suo codice non lo sono.</p>
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
 Gli identificativi e la loro documentazione sono pubblicati perche' chiunque

@@ -154,6 +154,11 @@
     },
     "checksExecuted": { "type": "array", "items": { "type": "string" } },
     "checksSkipped": { "type": "array", "items": { "type": "string" } },
+    "checkTimings": {
+      "description": "Millisecondi impiegati da ogni controllo eseguito, per identificativo. Risponde a 'quale controllo mi costa quanto' su un parco macchine. Campo facoltativo: i run prodotti prima della sua introduzione non lo portano, e restano validi.",
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
     "findings": {
       "type": "array",
       "items": {

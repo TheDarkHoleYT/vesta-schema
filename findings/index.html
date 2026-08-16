@@ -31,7 +31,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <body><main>
 <nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
 <h1>Rilevamenti</h1>
-<p class="lead">399 identificativi. Ognuno e stabile: pubblicato non si rinomina e non si riusa mai per un altro significato.</p>
+<p class="lead">421 identificativi. Ognuno e stabile: pubblicato non si rinomina e non si riusa mai per un altro significato.</p>
 <p>Indice macchina-leggibile: <a href="../findings.json">findings.json</a></p>
 <h2>Backup (6)</h2><ul class="ids">
 <li><a href="BACKUP.FAILED.html"><code>BACKUP.FAILED</code></a></li>
@@ -140,6 +140,20 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <li><a href="EVENTS.WHEA.FOUND.html"><code>EVENTS.WHEA.FOUND</code></a></li>
 <li><a href="EVENTS.WHEA.NONE.html"><code>EVENTS.WHEA.NONE</code></a></li>
 </ul>
+<h2>Hardware (12)</h2><ul class="ids">
+<li><a href="HARDWARE.CABLE.BASELINE.html"><code>HARDWARE.CABLE.BASELINE</code></a></li>
+<li><a href="HARDWARE.CABLE.ERRORS.html"><code>HARDWARE.CABLE.ERRORS</code></a></li>
+<li><a href="HARDWARE.CABLE.OK.html"><code>HARDWARE.CABLE.OK</code></a></li>
+<li><a href="HARDWARE.GPU.HOT.html"><code>HARDWARE.GPU.HOT</code></a></li>
+<li><a href="HARDWARE.GPU.LINK_DEGRADED.html"><code>HARDWARE.GPU.LINK_DEGRADED</code></a></li>
+<li><a href="HARDWARE.GPU.NOT_MEASURED.html"><code>HARDWARE.GPU.NOT_MEASURED</code></a></li>
+<li><a href="HARDWARE.GPU.OK.html"><code>HARDWARE.GPU.OK</code></a></li>
+<li><a href="HARDWARE.GPU.THROTTLED.html"><code>HARDWARE.GPU.THROTTLED</code></a></li>
+<li><a href="HARDWARE.GPU.UNKNOWN.html"><code>HARDWARE.GPU.UNKNOWN</code></a></li>
+<li><a href="HARDWARE.PSU.NOT_POWER.html"><code>HARDWARE.PSU.NOT_POWER</code></a></li>
+<li><a href="HARDWARE.PSU.OK.html"><code>HARDWARE.PSU.OK</code></a></li>
+<li><a href="HARDWARE.PSU.POWER_LOSS.html"><code>HARDWARE.PSU.POWER_LOSS</code></a></li>
+</ul>
 <h2>Integrity (9)</h2><ul class="ids">
 <li><a href="SYSTEM.INTEGRITY.IMAGE_OK.html"><code>SYSTEM.INTEGRITY.IMAGE_OK</code></a></li>
 <li><a href="SYSTEM.INTEGRITY.IMAGE_REPAIRABLE.html"><code>SYSTEM.INTEGRITY.IMAGE_REPAIRABLE</code></a></li>
@@ -170,8 +184,13 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <li><a href="INVENTORY.WARRANTY.OK.html"><code>INVENTORY.WARRANTY.OK</code></a></li>
 <li><a href="INVENTORY.WARRANTY.UNKNOWN.html"><code>INVENTORY.WARRANTY.UNKNOWN</code></a></li>
 </ul>
-<h2>Network (20)</h2><ul class="ids">
+<h2>Network (25)</h2><ul class="ids">
+<li><a href="NETWORK.ADAPTER.ERRORS.html"><code>NETWORK.ADAPTER.ERRORS</code></a></li>
+<li><a href="NETWORK.ADAPTER.HALF_DUPLEX.html"><code>NETWORK.ADAPTER.HALF_DUPLEX</code></a></li>
 <li><a href="NETWORK.ADAPTER.NONE.html"><code>NETWORK.ADAPTER.NONE</code></a></li>
+<li><a href="NETWORK.ADAPTER.OK.html"><code>NETWORK.ADAPTER.OK</code></a></li>
+<li><a href="NETWORK.ADAPTER.SPEED_FORCED.html"><code>NETWORK.ADAPTER.SPEED_FORCED</code></a></li>
+<li><a href="NETWORK.ADAPTER.SPEED_LOW.html"><code>NETWORK.ADAPTER.SPEED_LOW</code></a></li>
 <li><a href="NETWORK.ADAPTER.UP.html"><code>NETWORK.ADAPTER.UP</code></a></li>
 <li><a href="NETWORK.DNS.FAIL.html"><code>NETWORK.DNS.FAIL</code></a></li>
 <li><a href="NETWORK.DNS.OK.html"><code>NETWORK.DNS.OK</code></a></li>
@@ -399,10 +418,11 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <li><a href="STORAGE.OPTIMIZE.SSD.html"><code>STORAGE.OPTIMIZE.SSD</code></a></li>
 <li><a href="STORAGE.SCAN.TRUNCATED.html"><code>STORAGE.SCAN.TRUNCATED</code></a></li>
 </ul>
-<h2>System (43)</h2><ul class="ids">
+<h2>System (48)</h2><ul class="ids">
 <li><a href="GENERIC.CHECK.DISABLED_BY_POLICY.html"><code>GENERIC.CHECK.DISABLED_BY_POLICY</code></a></li>
 <li><a href="GENERIC.CHECK.FAILED.html"><code>GENERIC.CHECK.FAILED</code></a></li>
 <li><a href="GENERIC.CHECK.REQUIRES_ADMIN.html"><code>GENERIC.CHECK.REQUIRES_ADMIN</code></a></li>
+<li><a href="GENERIC.CHECK.SKIPPED_DEEP.html"><code>GENERIC.CHECK.SKIPPED_DEEP</code></a></li>
 <li><a href="GENERIC.CHECK.SKIPPED_OFFLINE.html"><code>GENERIC.CHECK.SKIPPED_OFFLINE</code></a></li>
 <li><a href="GENERIC.CHECK.SKIPPED_SLOW.html"><code>GENERIC.CHECK.SKIPPED_SLOW</code></a></li>
 <li><a href="GENERIC.CHECK.TIMEOUT.html"><code>GENERIC.CHECK.TIMEOUT</code></a></li>
@@ -416,6 +436,10 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <li><a href="RESTORE.POINTS.STALE.html"><code>RESTORE.POINTS.STALE</code></a></li>
 <li><a href="RESTORE.SHADOWSTORAGE.INFO.html"><code>RESTORE.SHADOWSTORAGE.INFO</code></a></li>
 <li><a href="SENSORS.SOURCE.ERROR.html"><code>SENSORS.SOURCE.ERROR</code></a></li>
+<li><a href="SENSORS.SOURCE.HWINFO.NO_SENSORS.html"><code>SENSORS.SOURCE.HWINFO.NO_SENSORS</code></a></li>
+<li><a href="SENSORS.SOURCE.HWINFO.NOT_RUNNING.html"><code>SENSORS.SOURCE.HWINFO.NOT_RUNNING</code></a></li>
+<li><a href="SENSORS.SOURCE.HWINFO.UNMAPPED.html"><code>SENSORS.SOURCE.HWINFO.UNMAPPED</code></a></li>
+<li><a href="SENSORS.SOURCE.HWINFO.VSB_OFF.html"><code>SENSORS.SOURCE.HWINFO.VSB_OFF</code></a></li>
 <li><a href="SENSORS.SOURCE.MISSING.html"><code>SENSORS.SOURCE.MISSING</code></a></li>
 <li><a href="SENSORS.SOURCES.ACTIVE.html"><code>SENSORS.SOURCES.ACTIVE</code></a></li>
 <li><a href="SENSORS.SUSTAINED.HIGH.html"><code>SENSORS.SUSTAINED.HIGH</code></a></li>
