@@ -1,6 +1,6 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-16T06:47:12.7423375Z",
+    "generatedAt":  "2026-08-16T07:07:56.9810535Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
@@ -6095,8 +6095,8 @@
                                                     "remediable":  false,
                                                     "riskLevel":  "Manual",
                                                     "title":  {
-                                                                  "it-IT":  "{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay} ore al giorno",
-                                                                  "en-US":  "{Metric} of {Subject} steadily above threshold: {HoursPerDay} hours a day"
+                                                                  "it-IT":  "{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay:n1} ore al giorno",
+                                                                  "en-US":  "{Metric} of {Subject} steadily above threshold: {HoursPerDay:n1} hours a day"
                                                               },
                                                     "emittedBy":  [
                                                                       "SENSORS.SUSTAINED"
@@ -6135,8 +6135,8 @@
                                                     "remediable":  false,
                                                     "riskLevel":  "Manual",
                                                     "title":  {
-                                                                  "it-IT":  "{Metric} di {Subject} sopra soglia {HoursPerDay} ore al giorno",
-                                                                  "en-US":  "{Metric} of {Subject} above threshold {HoursPerDay} hours a day"
+                                                                  "it-IT":  "{Metric} di {Subject} sopra soglia {HoursPerDay:n1} ore al giorno",
+                                                                  "en-US":  "{Metric} of {Subject} above threshold {HoursPerDay:n1} hours a day"
                                                               },
                                                     "emittedBy":  [
                                                                       "SENSORS.SUSTAINED"

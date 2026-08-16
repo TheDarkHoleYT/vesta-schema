@@ -31,7 +31,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <body><main>
 <nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
 <h1>SENSORS.SUSTAINED.HIGH</h1>
-<p class="lead">{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay} ore al giorno</p>
+<p class="lead">{Metric} di {Subject} stabilmente sopra soglia: {HoursPerDay:n1} ore al giorno</p>
 <h2>Scheda</h2><div class="overflow"><table>
 <tr><th>Area</th><td>System</td></tr>
 <tr><th>Severita</th><td><span class="tag sev-High">High</span></td></tr>
@@ -41,12 +41,12 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>SENSORS.SUSTAINED</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>{Subject}: la grandezza {Metric} sta sopra {Threshold} {Unit} per una media di {HoursPerDay} ore al giorno - su {Days} giorni di osservazione. Massimo toccato {Max}, valore abituale {P95}. A questo punto non è un picco occasionale, è il modo in cui questo computer lavora tutti i giorni. Letto da {Source}.</p>
+<p>{Subject}: la grandezza {Metric} sta sopra {Threshold:n0} {Unit} per una media di {HoursPerDay:n1} ore al giorno - su {Days} giorni di osservazione. Massimo toccato {Max:n1}, valore abituale {P95:n1}. A questo punto non è un picco occasionale, è il modo in cui questo computer lavora tutti i giorni. Letto da {Source}.</p>
 <h2>Da dove cominciare</h2>
 <p>A queste ore al giorno la componente si consuma molto più in fretta del previsto, e la spesa di intervenire adesso è una frazione di quella di sostituirla fra sei mesi. Nell'ordine: pulizia del dissipatore e delle griglie, verifica che le ventole girino davvero (non che esistano), riposizionamento se il computer è in uno spazio chiuso, e per un NVMe la verifica che ci sia un dissipatore - molti fissi ne sono sprovvisti e il disco va in protezione termica senza essere difettoso. Se dopo l'intervento le ore al giorno non scendono, allora è il componente.</p>
 <h2>English</h2>
-<p class="lead">{Metric} of {Subject} steadily above threshold: {HoursPerDay} hours a day</p>
-<p>{Subject}: {Metric} sits above {Threshold} {Unit} for an average of {HoursPerDay} hours a day, over {Days} days of observation. Peak {Max}, usual value {P95}. At this point it is not an occasional spike, it is how this computer works every day. Read from {Source}.</p>
+<p class="lead">{Metric} of {Subject} steadily above threshold: {HoursPerDay:n1} hours a day</p>
+<p>{Subject}: {Metric} sits above {Threshold:n0} {Unit} for an average of {HoursPerDay:n1} hours a day, over {Days} days of observation. Peak {Max:n1}, usual value {P95:n1}. At this point it is not an occasional spike, it is how this computer works every day. Read from {Source}.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.

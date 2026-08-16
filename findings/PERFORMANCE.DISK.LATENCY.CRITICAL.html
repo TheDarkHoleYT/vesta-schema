@@ -41,12 +41,12 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>PERFORMANCE.THROTTLE</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>{Model} ({MediaType}): attesa media {WorstMs} ms. A questi valori il computer sembra bloccato anche con la CPU libera.</p>
+<p>{Model} ({MediaType}): attesa media {WorstMs:n2} ms. A questi valori il computer sembra bloccato anche con la CPU libera.</p>
 <h2>Da dove cominciare</h2>
 <p>A questi valori il computer sembra bloccato anche quando la CPU è libera, ed è la spiegazione più frequente del «è lentissimo» che non trova riscontro in nessun altro indicatore. Verificare il backup per prima cosa, perché un'attesa così alta e persistente accompagna spesso un disco che sta cedendo: incrociare subito con i contatori SMART dello stesso disco. Se SMART è pulito, i due sospetti restano il cavo o il controller su un disco a piatti, e lo spazio libero esaurito su un SSD. Un disco a piatti che aspetta mezzo secondo per richiesta non torna sano: si sostituisce.</p>
 <h2>English</h2>
 <p class="lead">Disk keeps the machine waiting a long time</p>
-<p>{Model} ({MediaType}): average wait {WorstMs} ms. At these values the machine feels frozen even with an idle CPU.</p>
+<p>{Model} ({MediaType}): average wait {WorstMs:n2} ms. At these values the machine feels frozen even with an idle CPU.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.

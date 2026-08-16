@@ -31,7 +31,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <body><main>
 <nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
 <h1>SENSORS.SUSTAINED.WARN</h1>
-<p class="lead">{Metric} di {Subject} sopra soglia {HoursPerDay} ore al giorno</p>
+<p class="lead">{Metric} di {Subject} sopra soglia {HoursPerDay:n1} ore al giorno</p>
 <h2>Scheda</h2><div class="overflow"><table>
 <tr><th>Area</th><td>System</td></tr>
 <tr><th>Severita</th><td><span class="tag sev-Medium">Medium</span></td></tr>
@@ -41,12 +41,12 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>SENSORS.SUSTAINED</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>{Subject}: la grandezza {Metric} è stata sopra {Threshold} {Unit} per una media di {HoursPerDay} ore al giorno negli ultimi {Days} giorni. Massimo toccato {Max}, valore abituale {P95}. Non è un guasto: è una condizione di esercizio che consuma il componente più in fretta del previsto. Letto da {Source}.</p>
+<p>{Subject}: la grandezza {Metric} è stata sopra {Threshold:n0} {Unit} per una media di {HoursPerDay:n1} ore al giorno negli ultimi {Days} giorni. Massimo toccato {Max:n1}, valore abituale {P95:n1}. Non è un guasto: è una condizione di esercizio che consuma il componente più in fretta del previsto. Letto da {Source}.</p>
 <h2>Da dove cominciare</h2>
 <p>Guardare l'ambiente prima del componente: la polvere nel dissipatore, la ventola che gira piano, il computer chiuso in un mobile senza ricircolo, il portatile appoggiato su un divano. Sono le quattro cause di gran lunga più frequenti, e nessuna delle quattro si risolve sostituendo il pezzo. Se l'ambiente è a posto, il passo dopo è confrontare con una macchina gemella: se anche quella sta lì, non è quel computer, è il modello.</p>
 <h2>English</h2>
-<p class="lead">{Metric} of {Subject} above threshold {HoursPerDay} hours a day</p>
-<p>{Subject}: {Metric} stayed above {Threshold} {Unit} for an average of {HoursPerDay} hours a day over the last {Days} days. Peak {Max}, usual value {P95}. This is not a fault: it is an operating condition that wears the component faster than it should. Read from {Source}.</p>
+<p class="lead">{Metric} of {Subject} above threshold {HoursPerDay:n1} hours a day</p>
+<p>{Subject}: {Metric} stayed above {Threshold:n0} {Unit} for an average of {HoursPerDay:n1} hours a day over the last {Days} days. Peak {Max:n1}, usual value {P95:n1}. This is not a fault: it is an operating condition that wears the component faster than it should. Read from {Source}.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
