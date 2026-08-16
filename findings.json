@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-16T06:08:52.6967039Z",
+    "generatedAt":  "2026-08-16T06:47:12.7423375Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  393,
+    "count":  399,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -2946,6 +2946,126 @@
                                                                ],
                                                 "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.CPU.OK.html"
                                             },
+                     "PERFORMANCE.CPU.THROTTLE.OK":  {
+                                                         "id":  "PERFORMANCE.CPU.THROTTLE.OK",
+                                                         "eventId":  8016,
+                                                         "area":  "Performance",
+                                                         "severity":  "Info",
+                                                         "status":  "Ok",
+                                                         "remediable":  false,
+                                                         "riskLevel":  "Manual",
+                                                         "title":  {
+                                                                       "it-IT":  "Frequenza della CPU",
+                                                                       "en-US":  "CPU clock speed"
+                                                                   },
+                                                         "emittedBy":  [
+                                                                           "PERFORMANCE.THROTTLE"
+                                                                       ],
+                                                         "compliance":  [
+
+                                                                        ],
+                                                         "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.CPU.THROTTLE.OK.html"
+                                                     },
+                     "PERFORMANCE.CPU.THROTTLE.UNKNOWN":  {
+                                                              "id":  "PERFORMANCE.CPU.THROTTLE.UNKNOWN",
+                                                              "eventId":  8018,
+                                                              "area":  "Performance",
+                                                              "severity":  "Info",
+                                                              "status":  "Skip",
+                                                              "remediable":  false,
+                                                              "riskLevel":  "Manual",
+                                                              "title":  {
+                                                                            "it-IT":  "Frequenza della CPU non valutabile",
+                                                                            "en-US":  "CPU clock speed could not be judged"
+                                                                        },
+                                                              "emittedBy":  [
+                                                                                "PERFORMANCE.THROTTLE"
+                                                                            ],
+                                                              "compliance":  [
+
+                                                                             ],
+                                                              "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.CPU.THROTTLE.UNKNOWN.html"
+                                                          },
+                     "PERFORMANCE.CPU.THROTTLED":  {
+                                                       "id":  "PERFORMANCE.CPU.THROTTLED",
+                                                       "eventId":  8017,
+                                                       "area":  "Performance",
+                                                       "severity":  "Medium",
+                                                       "status":  "Warn",
+                                                       "remediable":  false,
+                                                       "riskLevel":  "Manual",
+                                                       "title":  {
+                                                                     "it-IT":  "La CPU gira sotto la propria frequenza",
+                                                                     "en-US":  "CPU running below its rated speed"
+                                                                 },
+                                                       "emittedBy":  [
+                                                                         "PERFORMANCE.THROTTLE"
+                                                                     ],
+                                                       "compliance":  [
+
+                                                                      ],
+                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.CPU.THROTTLED.html"
+                                                   },
+                     "PERFORMANCE.DISK.LATENCY.CRITICAL":  {
+                                                               "id":  "PERFORMANCE.DISK.LATENCY.CRITICAL",
+                                                               "eventId":  8021,
+                                                               "area":  "Performance",
+                                                               "severity":  "High",
+                                                               "status":  "Warn",
+                                                               "remediable":  false,
+                                                               "riskLevel":  "Manual",
+                                                               "title":  {
+                                                                             "it-IT":  "Il disco fa aspettare molto",
+                                                                             "en-US":  "Disk keeps the machine waiting a long time"
+                                                                         },
+                                                               "emittedBy":  [
+                                                                                 "PERFORMANCE.THROTTLE"
+                                                                             ],
+                                                               "compliance":  [
+
+                                                                              ],
+                                                               "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.DISK.LATENCY.CRITICAL.html"
+                                                           },
+                     "PERFORMANCE.DISK.LATENCY.HIGH":  {
+                                                           "id":  "PERFORMANCE.DISK.LATENCY.HIGH",
+                                                           "eventId":  8020,
+                                                           "area":  "Performance",
+                                                           "severity":  "Medium",
+                                                           "status":  "Warn",
+                                                           "remediable":  false,
+                                                           "riskLevel":  "Manual",
+                                                           "title":  {
+                                                                         "it-IT":  "Il disco fa aspettare",
+                                                                         "en-US":  "Disk keeps the machine waiting"
+                                                                     },
+                                                           "emittedBy":  [
+                                                                             "PERFORMANCE.THROTTLE"
+                                                                         ],
+                                                           "compliance":  [
+
+                                                                          ],
+                                                           "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.DISK.LATENCY.HIGH.html"
+                                                       },
+                     "PERFORMANCE.DISK.LATENCY.OK":  {
+                                                         "id":  "PERFORMANCE.DISK.LATENCY.OK",
+                                                         "eventId":  8019,
+                                                         "area":  "Performance",
+                                                         "severity":  "Info",
+                                                         "status":  "Ok",
+                                                         "remediable":  false,
+                                                         "riskLevel":  "Manual",
+                                                         "title":  {
+                                                                       "it-IT":  "Tempo di risposta del disco",
+                                                                       "en-US":  "Disk response time"
+                                                                   },
+                                                         "emittedBy":  [
+                                                                           "PERFORMANCE.THROTTLE"
+                                                                       ],
+                                                         "compliance":  [
+
+                                                                        ],
+                                                         "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/PERFORMANCE.DISK.LATENCY.OK.html"
+                                                     },
                      "PERFORMANCE.PAGEFILE.HIGH":  {
                                                        "id":  "PERFORMANCE.PAGEFILE.HIGH",
                                                        "eventId":  8013,
