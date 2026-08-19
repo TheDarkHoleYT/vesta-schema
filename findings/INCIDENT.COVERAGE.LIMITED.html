@@ -41,10 +41,10 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>INCIDENT.CORRELATION</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>L'analisi degli episodi è attiva ma non ha ancora prodotto dati, oppure ha smesso di girare. Un referto che dicesse 'nessun problema' in questa condizione descriverebbe lo strumento, non il computer.</p>
+<p>Motivo: {Reason}. «no-scheduled-task» vuol dire che il correlatore è acceso nella policy ma nessuna operazione pianificata lo esegue: il deposito non si riempirà mai da solo, va installato l'agente — oppure si guardano subito i registri già presenti con Invoke-PCMaintenanceIncident -Historical. «no-detector-runs»: l'operazione c'è e non è ancora partita. «detector-stale»: ha smesso di girare. «store-not-writable»: gira ma non riesce a scrivere in {Path}, e gli episodi che trova si perdono. In tutti e quattro i casi un referto che dicesse «nessun problema» descriverebbe lo strumento, non il computer.</p>
 <h2>English</h2>
 <p class="lead">Episode analysis is not running: no diagnosis is possible</p>
-<p>Episode analysis is enabled but has not produced data yet, or has stopped running. A report saying &quot;no problems&quot; in this state would be describing the tool, not the machine.</p>
+<p>Reason: {Reason}. &quot;no-scheduled-task&quot; means the correlator is enabled in the policy but no scheduled task runs it: the store will never fill up on its own, the agent has to be installed - or read the logs already on the machine right away with Invoke-PCMaintenanceIncident -Historical. &quot;no-detector-runs&quot;: the task exists and has not fired yet. &quot;detector-stale&quot;: it stopped running. &quot;store-not-writable&quot;: it runs but cannot write to {Path}, so the episodes it finds are lost. In all four cases a report saying &quot;no problems&quot; would be describing the tool, not the machine.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
