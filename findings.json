@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-16T16:02:02.3103236Z",
+    "generatedAt":  "2026-08-19T13:12:14.4874434Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  421,
+    "count":  436,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -2266,6 +2266,186 @@
                                                                     ],
                                                      "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/HARDWARE.PSU.POWER_LOSS.html"
                                                  },
+                     "INCIDENT.CONTRADICTED":  {
+                                                   "id":  "INCIDENT.CONTRADICTED",
+                                                   "eventId":  18005,
+                                                   "area":  "Incident",
+                                                   "severity":  "Low",
+                                                   "status":  "Warn",
+                                                   "remediable":  false,
+                                                   "riskLevel":  "Manual",
+                                                   "title":  {
+                                                                 "it-IT":  "La regola {Rule} è scattata, ma senza un riscontro che era atteso",
+                                                                 "en-US":  "Rule {Rule} fired, but without a corroborating event that was expected"
+                                                             },
+                                                   "emittedBy":  [
+                                                                     "INCIDENT.CORRELATION"
+                                                                 ],
+                                                   "compliance":  [
+
+                                                                  ],
+                                                   "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.CONTRADICTED.html"
+                                               },
+                     "INCIDENT.COVERAGE.LIMITED":  {
+                                                       "id":  "INCIDENT.COVERAGE.LIMITED",
+                                                       "eventId":  18007,
+                                                       "area":  "Incident",
+                                                       "severity":  "Info",
+                                                       "status":  "Info",
+                                                       "remediable":  false,
+                                                       "riskLevel":  "Manual",
+                                                       "title":  {
+                                                                     "it-IT":  "L\u0027analisi degli episodi non sta girando: nessuna diagnosi è possibile",
+                                                                     "en-US":  "Episode analysis is not running: no diagnosis is possible"
+                                                                 },
+                                                       "emittedBy":  [
+                                                                         "INCIDENT.CORRELATION"
+                                                                     ],
+                                                       "compliance":  [
+
+                                                                      ],
+                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.COVERAGE.LIMITED.html"
+                                                   },
+                     "INCIDENT.NETWORK.LINK_FLAP":  {
+                                                        "id":  "INCIDENT.NETWORK.LINK_FLAP",
+                                                        "eventId":  18000,
+                                                        "area":  "Incident",
+                                                        "severity":  "High",
+                                                        "status":  "Warn",
+                                                        "remediable":  false,
+                                                        "riskLevel":  "Manual",
+                                                        "title":  {
+                                                                      "it-IT":  "La rete è caduta a livello fisico ({Count:n0} volte)",
+                                                                      "en-US":  "The network dropped at the physical level ({Count:n0} times)"
+                                                                  },
+                                                        "emittedBy":  [
+                                                                          "INCIDENT.CORRELATION"
+                                                                      ],
+                                                        "compliance":  [
+
+                                                                       ],
+                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.NETWORK.LINK_FLAP.html"
+                                                    },
+                     "INCIDENT.NETWORK.PORT_EXHAUSTION":  {
+                                                              "id":  "INCIDENT.NETWORK.PORT_EXHAUSTION",
+                                                              "eventId":  18002,
+                                                              "area":  "Incident",
+                                                              "severity":  "High",
+                                                              "status":  "Warn",
+                                                              "remediable":  false,
+                                                              "riskLevel":  "Manual",
+                                                              "title":  {
+                                                                            "it-IT":  "Il computer ha esaurito le porte di rete disponibili ({Count:n0} volte)",
+                                                                            "en-US":  "The machine ran out of available network ports ({Count:n0} times)"
+                                                                        },
+                                                              "emittedBy":  [
+                                                                                "INCIDENT.CORRELATION"
+                                                                            ],
+                                                              "compliance":  [
+
+                                                                             ],
+                                                              "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.NETWORK.PORT_EXHAUSTION.html"
+                                                          },
+                     "INCIDENT.NETWORK.STACK_FLAP":  {
+                                                         "id":  "INCIDENT.NETWORK.STACK_FLAP",
+                                                         "eventId":  18001,
+                                                         "area":  "Incident",
+                                                         "severity":  "Medium",
+                                                         "status":  "Warn",
+                                                         "remediable":  false,
+                                                         "riskLevel":  "Manual",
+                                                         "title":  {
+                                                                       "it-IT":  "La rete si è disconnessa senza che il collegamento fisico cadesse ({Count:n0} volte)",
+                                                                       "en-US":  "The network disconnected without the physical link ever dropping ({Count:n0} times)"
+                                                                   },
+                                                         "emittedBy":  [
+                                                                           "INCIDENT.CORRELATION"
+                                                                       ],
+                                                         "compliance":  [
+
+                                                                        ],
+                                                         "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.NETWORK.STACK_FLAP.html"
+                                                     },
+                     "INCIDENT.NONE":  {
+                                           "id":  "INCIDENT.NONE",
+                                           "eventId":  18008,
+                                           "area":  "Incident",
+                                           "severity":  "Info",
+                                           "status":  "Ok",
+                                           "remediable":  false,
+                                           "riskLevel":  "Manual",
+                                           "title":  {
+                                                         "it-IT":  "Nessun episodio anomalo negli ultimi {WindowDays:n0} giorni",
+                                                         "en-US":  "No abnormal episodes in the last {WindowDays:n0} days"
+                                                     },
+                                           "emittedBy":  [
+                                                             "INCIDENT.CORRELATION"
+                                                         ],
+                                           "compliance":  [
+
+                                                          ],
+                                           "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.NONE.html"
+                                       },
+                     "INCIDENT.POWER.RAIL_LOSS":  {
+                                                      "id":  "INCIDENT.POWER.RAIL_LOSS",
+                                                      "eventId":  18003,
+                                                      "area":  "Incident",
+                                                      "severity":  "High",
+                                                      "status":  "Warn",
+                                                      "remediable":  false,
+                                                      "riskLevel":  "Manual",
+                                                      "title":  {
+                                                                    "it-IT":  "All\u0027alimentazione sono mancate le tensioni principali ({Count:n0} volte)",
+                                                                    "en-US":  "The power supply lost its main rails ({Count:n0} times)"
+                                                                },
+                                                      "emittedBy":  [
+                                                                        "INCIDENT.CORRELATION"
+                                                                    ],
+                                                      "compliance":  [
+
+                                                                     ],
+                                                      "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.POWER.RAIL_LOSS.html"
+                                                  },
+                     "INCIDENT.SOURCE.IMMATURE":  {
+                                                      "id":  "INCIDENT.SOURCE.IMMATURE",
+                                                      "eventId":  18006,
+                                                      "area":  "Incident",
+                                                      "severity":  "Info",
+                                                      "status":  "Info",
+                                                      "remediable":  false,
+                                                      "riskLevel":  "Manual",
+                                                      "title":  {
+                                                                    "it-IT":  "Alcune fonti diagnostiche non hanno ancora mai registrato nulla",
+                                                                    "en-US":  "Some diagnostic sources have never recorded anything yet"
+                                                                },
+                                                      "emittedBy":  [
+                                                                        "INCIDENT.CORRELATION"
+                                                                    ],
+                                                      "compliance":  [
+
+                                                                     ],
+                                                      "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.SOURCE.IMMATURE.html"
+                                                  },
+                     "INCIDENT.UNRESOLVED":  {
+                                                 "id":  "INCIDENT.UNRESOLVED",
+                                                 "eventId":  18004,
+                                                 "area":  "Incident",
+                                                 "severity":  "Low",
+                                                 "status":  "Info",
+                                                 "remediable":  false,
+                                                 "riskLevel":  "Manual",
+                                                 "title":  {
+                                                               "it-IT":  "{Count:n0} episodi registrati senza che si possa dire cosa li ha causati",
+                                                               "en-US":  "{Count:n0} episodes recorded without being able to say what caused them"
+                                                           },
+                                                 "emittedBy":  [
+                                                                   "INCIDENT.CORRELATION"
+                                                               ],
+                                                 "compliance":  [
+
+                                                                ],
+                                                 "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/INCIDENT.UNRESOLVED.html"
+                                             },
                      "INVENTORY.GPU":  {
                                            "id":  "INVENTORY.GPU",
                                            "eventId":  11002,
@@ -3946,6 +4126,26 @@
                                                               ],
                                                "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.QUEUE.TRIMMED.html"
                                            },
+                     "RUN.REGISTRYBACKUP.MISSING":  {
+                                                        "id":  "RUN.REGISTRYBACKUP.MISSING",
+                                                        "eventId":  1015,
+                                                        "area":  "Run",
+                                                        "severity":  "High",
+                                                        "status":  "Warn",
+                                                        "remediable":  false,
+                                                        "riskLevel":  "Manual",
+                                                        "title":  {
+                                                                      "it-IT":  "Backup del registro non riuscito: le correzioni sono partite senza",
+                                                                      "en-US":  "Registry backup failed: the fixes ran without it"
+                                                                  },
+                                                        "emittedBy":  [
+                                                                          "BACKUP"
+                                                                      ],
+                                                        "compliance":  [
+
+                                                                       ],
+                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.REGISTRYBACKUP.MISSING.html"
+                                                    },
                      "RUN.RESTOREPOINT.MISSING":  {
                                                       "id":  "RUN.RESTOREPOINT.MISSING",
                                                       "eventId":  1005,
@@ -7587,6 +7787,106 @@
                                                              ],
                                               "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.BIOS.INFO.html"
                                           },
+                     "SYSTEM.CHANNELS.ARMED":  {
+                                                   "id":  "SYSTEM.CHANNELS.ARMED",
+                                                   "eventId":  2044,
+                                                   "area":  "System",
+                                                   "severity":  "Info",
+                                                   "status":  "Ok",
+                                                   "remediable":  false,
+                                                   "riskLevel":  "Manual",
+                                                   "title":  {
+                                                                 "it-IT":  "Registrazione degli eventi diagnostici attiva ({Count:n0} canali)",
+                                                                 "en-US":  "Diagnostic event recording is active ({Count:n0} channels)"
+                                                             },
+                                                   "emittedBy":  [
+                                                                     "SYSTEM.CHANNELS"
+                                                                 ],
+                                                   "compliance":  [
+
+                                                                  ],
+                                                   "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.CHANNELS.ARMED.html"
+                                               },
+                     "SYSTEM.CHANNELS.DISABLED":  {
+                                                      "id":  "SYSTEM.CHANNELS.DISABLED",
+                                                      "eventId":  2045,
+                                                      "area":  "System",
+                                                      "severity":  "Medium",
+                                                      "status":  "Warn",
+                                                      "remediable":  true,
+                                                      "riskLevel":  "Safe",
+                                                      "title":  {
+                                                                    "it-IT":  "{Count:n0} canali diagnostici sono spenti: gli episodi non lasciano traccia",
+                                                                    "en-US":  "{Count:n0} diagnostic channels are off: episodes leave no trace"
+                                                                },
+                                                      "emittedBy":  [
+                                                                        "SYSTEM.CHANNELS"
+                                                                    ],
+                                                      "compliance":  [
+
+                                                                     ],
+                                                      "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.CHANNELS.DISABLED.html"
+                                                  },
+                     "SYSTEM.CHANNELS.MISSING":  {
+                                                     "id":  "SYSTEM.CHANNELS.MISSING",
+                                                     "eventId":  2052,
+                                                     "area":  "System",
+                                                     "severity":  "Info",
+                                                     "status":  "Info",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "{Count:n0} canali diagnostici non esistono in questa edizione di Windows",
+                                                                   "en-US":  "{Count:n0} diagnostic channels do not exist in this Windows edition"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "SYSTEM.CHANNELS"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.CHANNELS.MISSING.html"
+                                                 },
+                     "SYSTEM.CHANNELS.SHORT_RETENTION":  {
+                                                             "id":  "SYSTEM.CHANNELS.SHORT_RETENTION",
+                                                             "eventId":  2051,
+                                                             "area":  "System",
+                                                             "severity":  "Low",
+                                                             "status":  "Info",
+                                                             "remediable":  false,
+                                                             "riskLevel":  "Manual",
+                                                             "title":  {
+                                                                           "it-IT":  "{Count:n0} canali si riempiono più in fretta di quanto servirebbe",
+                                                                           "en-US":  "{Count:n0} channels fill up faster than the history you need"
+                                                                       },
+                                                             "emittedBy":  [
+                                                                               "SYSTEM.CHANNELS"
+                                                                           ],
+                                                             "compliance":  [
+
+                                                                            ],
+                                                             "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.CHANNELS.SHORT_RETENTION.html"
+                                                         },
+                     "SYSTEM.CHANNELS.UNDERSIZED":  {
+                                                        "id":  "SYSTEM.CHANNELS.UNDERSIZED",
+                                                        "eventId":  2046,
+                                                        "area":  "System",
+                                                        "severity":  "Low",
+                                                        "status":  "Warn",
+                                                        "remediable":  true,
+                                                        "riskLevel":  "Safe",
+                                                        "title":  {
+                                                                      "it-IT":  "{Count:n0} canali diagnostici conservano troppo poco storico",
+                                                                      "en-US":  "{Count:n0} diagnostic channels keep too little history"
+                                                                  },
+                                                        "emittedBy":  [
+                                                                          "SYSTEM.CHANNELS"
+                                                                      ],
+                                                        "compliance":  [
+
+                                                                       ],
+                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SYSTEM.CHANNELS.UNDERSIZED.html"
+                                                    },
                      "SYSTEM.CPU.INFO":  {
                                              "id":  "SYSTEM.CPU.INFO",
                                              "eventId":  2010,

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contratto e rilevamenti - VestaMaintenance</title>
+<title>INCIDENT.NONE - VestaMaintenance</title>
 <style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
 @media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
 *{box-sizing:border-box}
@@ -29,36 +29,23 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 .overflow{overflow-x:auto}</style>
 </head>
 <body><main>
-<nav><a href="./index.html">VestaMaintenance</a> / <a href="./findings/index.html">rilevamenti</a></nav>
-<h1>VestaMaintenance</h1>
-<p class="lead">Contratto dei dati e vocabolario dei rilevamenti.</p>
+<nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
+<h1>INCIDENT.NONE</h1>
+<p class="lead">Nessun episodio anomalo negli ultimi {WindowDays:n0} giorni</p>
+<h2>Scheda</h2><div class="overflow"><table>
+<tr><th>Area</th><td>Incident</td></tr>
+<tr><th>Severita</th><td><span class="tag sev-Info">Info</span></td></tr>
+<tr><th>Stato</th><td>Ok</td></tr>
+<tr><th>Evento Windows</th><td><code>18008</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
+<tr><th>Emesso da</th><td><code>INCIDENT.CORRELATION</code></td></tr>
+</table></div>
+<h2>Che cosa significa</h2>
+<p>Negli ultimi {WindowDays:n0} giorni non è stato registrato nessun episodio degno di analisi.</p>
+<h2>English</h2>
+<p class="lead">No abnormal episodes in the last {WindowDays:n0} days</p>
+<p>No episode worth analysing was recorded in the last {WindowDays:n0} days.</p>
 
-<h2>Contratto</h2>
-<p>Ogni esecuzione produce un file JSON. Questo e il suo schema, versione
-<code>1.1</code>:</p>
-<p><a href="schema/run-1.1.json"><code>schema/run-1.1.json</code></a></p>
-<p>La versione si incrementa <strong>solo</strong> per modifiche non
-retrocompatibili: un aggregatore la usa per rifiutare cio che non sa
-interpretare.</p>
-
-<h2>Rilevamenti</h2>
-<p>436 identificativi, uno per ogni condizione che il prodotto sa
-riconoscere. <code>DISK.SMART.PREDICTIVE_FAILURE</code>, non la stringa
-&quot;guasto imminente&quot;.</p>
-<p>Un identificativo pubblicato <strong>non si rinomina e non si riusa mai per
-un altro significato</strong>: e cio che permette di confrontare i dati di oggi
-con quelli dell anno scorso, e di sommare trecento computer in un numero solo.</p>
-<p><a href="findings/index.html">Elenco completo</a> &middot;
-   <a href="findings.json">Indice macchina-leggibile</a></p>
-
-<h2>Perche e pubblico</h2>
-<p>Perche chiunque possa scriverci sopra: una regola di correlazione in un SIEM,
-un ticket con l identificativo nel titolo, un monitoraggio in un RMM, un
-controllo in un altro strumento. Sono le stesse proprieta che rendono
-utilizzabili CVE e i CIS Controls.</p>
-<p>Documentazione e indice sono pubblicati con licenza
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Il
-prodotto e il suo codice non lo sono.</p>
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
 Gli identificativi e la loro documentazione sono pubblicati perche' chiunque
