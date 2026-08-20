@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-19T14:56:00.4209271Z",
+    "generatedAt":  "2026-08-20T08:26:04.3899354Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  436,
+    "count":  438,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -2886,6 +2886,26 @@
                                                                ],
                                                 "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/MEMORY.TEST.ERRORS.html"
                                             },
+                     "MEMORY.TEST.INCONCLUSIVE":  {
+                                                      "id":  "MEMORY.TEST.INCONCLUSIVE",
+                                                      "eventId":  2053,
+                                                      "area":  "System",
+                                                      "severity":  "Info",
+                                                      "status":  "Info",
+                                                      "remediable":  false,
+                                                      "riskLevel":  "Manual",
+                                                      "title":  {
+                                                                    "it-IT":  "Test della memoria senza esito",
+                                                                    "en-US":  "Memory test with no verdict"
+                                                                },
+                                                      "emittedBy":  [
+                                                                        "SYSTEM.MEMORYTEST"
+                                                                    ],
+                                                      "compliance":  [
+
+                                                                     ],
+                                                      "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/MEMORY.TEST.INCONCLUSIVE.html"
+                                                  },
                      "MEMORY.TEST.NEVER_RUN":  {
                                                    "id":  "MEMORY.TEST.NEVER_RUN",
                                                    "eventId":  2036,
@@ -3986,6 +4006,26 @@
                                                           ],
                                            "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.CANCELLED.html"
                                        },
+                     "RUN.CORROBORATION.APPLIED":  {
+                                                       "id":  "RUN.CORROBORATION.APPLIED",
+                                                       "eventId":  1016,
+                                                       "area":  "Run",
+                                                       "severity":  "Info",
+                                                       "status":  "Info",
+                                                       "remediable":  false,
+                                                       "riskLevel":  "Manual",
+                                                       "title":  {
+                                                                     "it-IT":  "Rilevamenti declassati per mancanza di riscontro",
+                                                                     "en-US":  "Findings downgraded for lack of corroboration"
+                                                                 },
+                                                       "emittedBy":  [
+                                                                         "RUN"
+                                                                     ],
+                                                       "compliance":  [
+
+                                                                      ],
+                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.CORROBORATION.APPLIED.html"
+                                                   },
                      "RUN.FIX.TIMEOUT":  {
                                              "id":  "RUN.FIX.TIMEOUT",
                                              "eventId":  1008,

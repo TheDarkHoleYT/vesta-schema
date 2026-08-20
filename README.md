@@ -2,7 +2,7 @@
 
 Questo repository contiene **soltanto artefatti generati**: lo schema del file
 JSON che VestaMaintenance produce a ogni esecuzione, e una pagina per ognuno dei
-436 identificativi di rilevamento.
+438 identificativi di rilevamento.
 
 **Non contiene il prodotto ne' il suo codice sorgente.**
 

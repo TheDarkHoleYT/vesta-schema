@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MEMORY.TEST.ERRORS - VestaMaintenance</title>
+<title>MEMORY.TEST.INCONCLUSIVE - VestaMaintenance</title>
 <style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
 @media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
 *{box-sizing:border-box}
@@ -30,23 +30,21 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 </head>
 <body><main>
 <nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
-<h1>MEMORY.TEST.ERRORS</h1>
-<p class="lead">ERRORI RILEVATI NELLA MEMORIA RAM</p>
+<h1>MEMORY.TEST.INCONCLUSIVE</h1>
+<p class="lead">Test della memoria senza esito</p>
 <h2>Scheda</h2><div class="overflow"><table>
 <tr><th>Area</th><td>System</td></tr>
-<tr><th>Severita</th><td><span class="tag sev-Critical">Critical</span></td></tr>
-<tr><th>Stato</th><td>Fail</td></tr>
-<tr><th>Evento Windows</th><td><code>2038</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Severita</th><td><span class="tag sev-Info">Info</span></td></tr>
+<tr><th>Stato</th><td>Info</td></tr>
+<tr><th>Evento Windows</th><td><code>2053</code> nel log <code>VestaMaintenance</code></td></tr>
 <tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
 <tr><th>Emesso da</th><td><code>SYSTEM.MEMORYTEST</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>Test del {Date}: esito {Completion}, la diagnostica ha contato pagine di memoria difettose.</p>
-<h2>Da dove cominciare</h2>
-<p>Prima di comprare memoria nuova, guardare se qualcos'altro concorda: eventi WHEA, schermate blu, corruzione di file. Un memtest fallito da solo, con WHEA e bugcheck a zero, capita più spesso per un test interrotto o per una lettura vecchia che per dei moduli difettosi. Se invece i segnali concordano, il passo successivo è provare i banchi uno alla volta: si scopre quale sostituire senza cambiarli tutti.</p>
+<p>Test del {Date}: esito {Completion}. Il test non è arrivato in fondo: non dice né che la memoria è sana né che è guasta.</p>
 <h2>English</h2>
-<p class="lead">ERRORS DETECTED IN SYSTEM MEMORY</p>
-<p>Test on {Date}: completion {Completion}, the diagnostic counted faulty memory pages.</p>
+<p class="lead">Memory test with no verdict</p>
+<p>Test on {Date}: completion {Completion}. The test did not reach the end: it says neither that the memory is healthy nor that it is faulty.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.

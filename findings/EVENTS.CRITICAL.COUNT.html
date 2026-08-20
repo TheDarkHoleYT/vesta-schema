@@ -41,12 +41,12 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>SYSTEM.EVENTLOG</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>{Count} eventi di livello Errore o Critico in {Days} giorni.</p>
+<p>{Count} eventi di livello Errore o Critico in {Days} giorni, su {Raw} letti ({Benign} da origini benigne note).</p>
 <h2>Da dove cominciare</h2>
 <p>Aprire il Visualizzatore eventi e ordinare per origine: quasi sempre un solo componente produce quasi tutti gli errori. Le origini che contano davvero sono Kernel-Power (spegnimenti), disk e Ntfs (disco), Application Hang e Application Error (un programma preciso). Il resto di solito è rumore.</p>
 <h2>English</h2>
 <p class="lead">High number of errors in the event log</p>
-<p>{Count} Error or Critical events in {Days} days.</p>
+<p>{Count} Error or Critical events in {Days} days, out of {Raw} read ({Benign} from known benign sources).</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
