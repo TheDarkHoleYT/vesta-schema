@@ -41,10 +41,10 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 <tr><th>Emesso da</th><td><code>PERFORMANCE.STARTUP</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>Il canale {Channel} non ha misure di avvio da leggere: {Reason}. Con no-events il canale esiste ed è vuoto, con no-channel su questo Windows non esiste affatto. Non è un avvio lento: è l'assenza della misura.</p>
+<p>Nessuna misura di avvio da {Channel}: {Reason}. not-elevated = la lettura è tornata vuota ma questa sessione non è elevata, e senza privilegi Windows non distingue un canale vuoto da uno che non si può leggere: rieseguire come amministratore. no-events = canale letto con i privilegi giusti e davvero senza misure. no-channel = su questo Windows quel canale non esiste. In nessuno dei tre casi l'avvio è lento: manca la misura.</p>
 <h2>English</h2>
 <p class="lead">Boot duration not measurable</p>
-<p>Channel {Channel} has no boot measurement to read: {Reason}. With no-events the channel exists and is empty; with no-channel it does not exist on this Windows. This is not a slow boot: the measurement is missing.</p>
+<p>No boot measurement from {Channel}: {Reason}. not-elevated = the read came back empty but this session is not elevated, and without privileges Windows does not tell an empty channel apart from one it will not let you read: run again as administrator. no-events = channel read with the right privileges and genuinely without measurements. no-channel = that channel does not exist on this Windows. In none of the three cases is the boot slow: the measurement is missing.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.
