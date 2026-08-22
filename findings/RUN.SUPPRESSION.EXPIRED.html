@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>UPDATES.SERVICING.OK - VestaMaintenance</title>
+<title>RUN.SUPPRESSION.EXPIRED - VestaMaintenance</title>
 <style>:root{--fg:#111;--dim:#555;--line:#ddd;--bg:#fff;--accent:#0b6bcb;--warn:#b45309;--fail:#b91c1c}
 @media(prefers-color-scheme:dark){:root{--fg:#e8e8e8;--dim:#a0a0a0;--line:#333;--bg:#111;--accent:#5aa9f8;--warn:#fbbf24;--fail:#f87171}}
 *{box-sizing:border-box}
@@ -30,21 +30,21 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:v
 </head>
 <body><main>
 <nav><a href="../index.html">VestaMaintenance</a> / <a href="../findings/index.html">rilevamenti</a></nav>
-<h1>UPDATES.SERVICING.OK</h1>
-<p class="lead">Componenti di Windows Update funzionanti</p>
+<h1>RUN.SUPPRESSION.EXPIRED</h1>
+<p class="lead">Soppressioni scadute</p>
 <h2>Scheda</h2><div class="overflow"><table>
-<tr><th>Area</th><td>Updates</td></tr>
+<tr><th>Area</th><td>Run</td></tr>
 <tr><th>Severita</th><td><span class="tag sev-Info">Info</span></td></tr>
-<tr><th>Stato</th><td>Ok</td></tr>
-<tr><th>Evento Windows</th><td><code>7012</code> nel log <code>VestaMaintenance</code></td></tr>
+<tr><th>Stato</th><td>Info</td></tr>
+<tr><th>Evento Windows</th><td><code>1019</code> nel log <code>VestaMaintenance</code></td></tr>
 <tr><th>Correzione</th><td>nessuna automatica: va guardato da una persona</td></tr>
-<tr><th>Emesso da</th><td><code>UPDATES.SERVICING</code></td></tr>
+<tr><th>Emesso da</th><td><code>RUN</code></td></tr>
 </table></div>
 <h2>Che cosa significa</h2>
-<p>Nessun aggiornamento di Windows fallito negli ultimi {Days} giorni. Errori di installazione letti: {Raw}, di cui {Store} di app dello Store, che non riguardano i componenti di Windows Update.</p>
+<p>Scadute ({Count}): {Findings}. Da adesso quei rilevamenti tornano a pesare. Se la ragione della soppressione vale ancora, va riscritta con una scadenza nuova.</p>
 <h2>English</h2>
-<p class="lead">Windows Update components healthy</p>
-<p>No Windows update failed in the last {Days} days. Installation errors read: {Raw}, of which {Store} were Store apps, which do not involve the Windows Update components.</p>
+<p class="lead">Suppressions expired</p>
+<p>Expired ({Count}): {Findings}. From now on those findings count again. If the reason for the suppression still holds, it must be written again with a new expiry.</p>
 
 <footer>
 Generato da <code>build/New-SchemaSite.ps1</code>.

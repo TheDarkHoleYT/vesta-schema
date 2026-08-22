@@ -98,6 +98,9 @@
       "properties": {
         "total": { "type": "integer", "minimum": 0, "maximum": 100 },
         "penalty": { "type": "number", "minimum": 0 },
+        "suppressed": { "type": "integer", "minimum": 0, "description": "Quanti rilevamenti sono stati soppressi in questa esecuzione: non contano nel punteggio ma restano nell'elenco, con motivo e scadenza nei propri dati." },
+        "totalWithoutSuppression": { "type": "integer", "minimum": 0, "maximum": 100, "description": "Il punteggio che si avrebbe senza nessuna soppressione. Uguale a total quando non ce ne sono. Confrontare i due e' l'unico modo di sapere se una macchina e' sana o silenziata." },
+        "penaltyWithoutSuppression": { "type": "number", "minimum": 0, "description": "La penalita' che si avrebbe senza nessuna soppressione." },
         "byArea": {
           "type": "object",
           "description": "Punteggio per area, chiavi dinamiche: una voce per ogni area che ha prodotto almeno un finding.",

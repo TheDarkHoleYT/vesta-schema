@@ -1,10 +1,10 @@
 {
     "$schema":  "https://json-schema.org/draft-07/schema#",
-    "generatedAt":  "2026-08-20T08:26:04.3899354Z",
+    "generatedAt":  "2026-08-22T10:20:25.2043646Z",
     "schemaVersion":  "1.1",
     "baseUrl":  "https://thedarkholeyt.github.io/vesta-schema",
     "license":  "CC BY 4.0",
-    "count":  438,
+    "count":  443,
     "findings":  {
                      "BACKUP.FAILED":  {
                                            "id":  "BACKUP.FAILED",
@@ -4026,6 +4026,26 @@
                                                                       ],
                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.CORROBORATION.APPLIED.html"
                                                    },
+                     "RUN.FIX.DISABLED":  {
+                                              "id":  "RUN.FIX.DISABLED",
+                                              "eventId":  1017,
+                                              "area":  "Run",
+                                              "severity":  "Info",
+                                              "status":  "Info",
+                                              "remediable":  false,
+                                              "riskLevel":  "Manual",
+                                              "title":  {
+                                                            "it-IT":  "Correzioni disattivate in configurazione",
+                                                            "en-US":  "Fixes turned off in the configuration"
+                                                        },
+                                              "emittedBy":  [
+                                                                "RUN"
+                                                            ],
+                                              "compliance":  [
+
+                                                             ],
+                                              "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.FIX.DISABLED.html"
+                                          },
                      "RUN.FIX.TIMEOUT":  {
                                              "id":  "RUN.FIX.TIMEOUT",
                                              "eventId":  1008,
@@ -4206,6 +4226,66 @@
                                                                      ],
                                                       "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.RESTOREPOINT.MISSING.html"
                                                   },
+                     "RUN.SUPPRESSION.APPLIED":  {
+                                                     "id":  "RUN.SUPPRESSION.APPLIED",
+                                                     "eventId":  1018,
+                                                     "area":  "Run",
+                                                     "severity":  "Info",
+                                                     "status":  "Info",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "Rilevamenti soppressi su richiesta",
+                                                                   "en-US":  "Findings suppressed on request"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "RUN"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.SUPPRESSION.APPLIED.html"
+                                                 },
+                     "RUN.SUPPRESSION.EXPIRED":  {
+                                                     "id":  "RUN.SUPPRESSION.EXPIRED",
+                                                     "eventId":  1019,
+                                                     "area":  "Run",
+                                                     "severity":  "Info",
+                                                     "status":  "Info",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "Soppressioni scadute",
+                                                                   "en-US":  "Suppressions expired"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "RUN"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.SUPPRESSION.EXPIRED.html"
+                                                 },
+                     "RUN.SUPPRESSION.INVALID":  {
+                                                     "id":  "RUN.SUPPRESSION.INVALID",
+                                                     "eventId":  1020,
+                                                     "area":  "Run",
+                                                     "severity":  "Medium",
+                                                     "status":  "Warn",
+                                                     "remediable":  false,
+                                                     "riskLevel":  "Manual",
+                                                     "title":  {
+                                                                   "it-IT":  "Soppressione scritta male: rifiutata",
+                                                                   "en-US":  "Malformed suppression: refused"
+                                                               },
+                                                     "emittedBy":  [
+                                                                       "RUN"
+                                                                   ],
+                                                     "compliance":  [
+
+                                                                    ],
+                                                     "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/RUN.SUPPRESSION.INVALID.html"
+                                                 },
                      "RUN.UPDATE.AVAILABLE":  {
                                                   "id":  "RUN.UPDATE.AVAILABLE",
                                                   "eventId":  1010,
@@ -7166,6 +7246,26 @@
                                                                       ],
                                                        "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/SIGNATURE.STORAGE.THERMAL.html"
                                                    },
+                     "STARTUP.BOOT.NO_DATA":  {
+                                                  "id":  "STARTUP.BOOT.NO_DATA",
+                                                  "eventId":  8022,
+                                                  "area":  "Performance",
+                                                  "severity":  "Info",
+                                                  "status":  "Info",
+                                                  "remediable":  false,
+                                                  "riskLevel":  "Manual",
+                                                  "title":  {
+                                                                "it-IT":  "Durata di avvio non misurabile",
+                                                                "en-US":  "Boot duration not measurable"
+                                                            },
+                                                  "emittedBy":  [
+                                                                    "PERFORMANCE.STARTUP"
+                                                                ],
+                                                  "compliance":  [
+
+                                                                 ],
+                                                  "url":  "https://thedarkholeyt.github.io/vesta-schema/findings/STARTUP.BOOT.NO_DATA.html"
+                                              },
                      "STARTUP.BOOT.OK":  {
                                              "id":  "STARTUP.BOOT.OK",
                                              "eventId":  8004,
